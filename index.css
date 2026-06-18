@@ -1,0 +1,110 @@
+@font-face{
+    font-family: "fuente1";
+    src: url("fonts/Sephora\ &\ Hayden.ttf") format("truetype");
+}
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Imágenes/fondo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; 
+    margin: 0;
+    padding: 0;
+}
+
+
+h1{
+    color: rgb(246, 112, 181);
+    font-family: "fuente1",'Times New Roman', Times, serif;
+    font-size: 100px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+h2{
+    color: rgb(137, 43, 226);
+    font-family: "fuente1",'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+#contenedor_principal{
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;         
+    border-radius: 10px;
+	background: #312f32bc;
+}
+
+p{
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+#contenedor_servicios{
+    width: 100%;
+    margin-top: 40px;
+}
+
+#servicios{
+    background: #212021;
+    display: flex; 
+    justify-content: space-evenly; 
+    align-items: center; 
+    padding: 25px 10px;
+    border-radius: 15px;
+}
+
+.servicio-item {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-decoration: none; 
+    width: 210px; 
+    text-align: center;
+}
+
+.rectangulo{
+    background: rgb(137, 43, 226);  
+    border: 5px solid rgb(166, 92, 236);
+    border-radius: 30px;
+    width: 100%;
+    height: 280px; 
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block; 
+}
+
+.texto-servicio {
+    margin: 15px 0 0 0;
+    font-size: 26px ;
+    font-weight: bold;
+    color: #ffffff ;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+#Boton_servicio_capilar{
+    background-image: url('Imágenes/imagen_servicio_capilar.jpeg');
+}
+
+#Boton_servicio_uñas{
+    background-image: url('Imágenes/imagen_servicio_uñas.jpeg');
+}
+
+#Boton_servicio_maquillaje{
+    background-image: url('Imágenes/imagen_servicio_maquillaje.jpeg');
+}
+
+#Boton_servicio_depilacion{
+    background-image: url('Imágenes/imagen_servicio_depilacion.jpeg');
+}

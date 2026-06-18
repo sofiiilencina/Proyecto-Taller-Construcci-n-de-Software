@@ -4,45 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boutique</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css"> 
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="">Compras</a>
-            <a href="">Servicios</a>
-            <a href="nuestros_trabajos.html">Nuestros trabajos</a>
-            <a href="contacto.html">Contacto</a>
-
-        <!--Links de las otras paginas-->    
-        </nav>
+    <div id="contenedor_principal">
         <h1>Boutique</h1>
-        <a href="">Iniciar sesion</a>
+        <section>
+            <h2>¿Quienes somos?</h2>
+            <p>Somos un espacio pensado exclusivamente para resaltar tu belleza natural y brindarte un momento de mimo y 
+                desconexión. En nuestra estética, combinamos profesionalismo, vanguardia y una atención totalmente personalizada 
+                para ofrecerte servicios de alta calidad en cuidado capilar, manicuría, maquillaje profesional y depilación.<br/>
+                Nuestro objetivo es que encuentres en un solo lugar todo lo que necesitás para sentirte renovada, cómoda y segura. 
+                Nos apasiona cuidar cada detalle para que tu experiencia sea única desde el primer momento. ¡Te invitamos a conocernos 
+                y a disfrutar del cuidado que te merecés!</p>
+        </section>
 
-        
-    </header>
-    <section>
-        <h2>¿Quienes somos?</h2>
-        <p>Somos...</p>
-    </section>
-    <section>
-        <!-- Carrusel -->
-    </section>
-    <section>
-        <h2>Servicios</h2>
-        <div class="servicios">
-            <h3>Capilar</h3>
+        <h2>Nuestros Servicios</h2>
+        <div id="contenedor_servicios">
+            <div id="servicios">
+                <a href="Capilar.html" class="servicio-item">
+                        <span id="Boton_servicio_capilar" class="rectangulo"></span>
+                        <p class="texto-servicio">Capilar</p>
+                    </a>
+
+                <a href="Uñas.html" class="servicio-item">
+                        <span id="Boton_servicio_uñas" class="rectangulo"></span>
+                        <p class="texto-servicio">Uñas</p>
+                    </a>
+
+                <a href="Maquillaje.html" class="servicio-item">
+                        <span id="Boton_servicio_maquillaje" class="rectangulo"></span>
+                        <p class="texto-servicio">Maquillaje</p>
+                    </a>
+
+                <a href="Depilacion.html" class="servicio-item">
+                        <span id="Boton_servicio_depilacion" class="rectangulo"></span>
+                        <p class="texto-servicio">Depilación</p>
+                    </a>
+            </div>
+
         </div>
-        <div class="servicios">
-            <h3>Uñas</h3>
-        </div>
-        <div class="servicios">
-            <h3>Maquillaje</h3>
-        </div>
-        <div class="servicios">
-            <h3>Depilacion</h3>
-        </div>
-        
-    </section>
+
+    </div>
+
 </body>
 </html>
