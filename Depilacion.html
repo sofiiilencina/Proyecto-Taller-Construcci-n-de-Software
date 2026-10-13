@@ -3,9 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Boutique - Depilación</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
+    <nav id="barra_navegacion">
+        <a href="index.html" class="nav-marca">
+            <span id="logo_nav"></span>
+            <span class="nav-nombre">Boutique</span>
+        </a>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="Capilar.html">Capilar</a>
+            <a href="Uñas.html">Uñas</a>
+            <a href="Maquillaje.html">Maquillaje</a>
+            <a href="Depilacion.html" class="activo">Depilación</a>
+            <a href="Venta.html">Venta</a>
+        </div>
+    </nav>
+
+    <div id="contenedor_principal">
+        <div class="hero-servicio">
+            <h1>Depilación</h1>
+            <p class="hero-tagline">Piel suave y cuidada con técnicas profesionales</p>
+        </div>
+
+        <section class="lista-servicios">
+            <div class="servicio-card">
+                <div class="servicio-info">
+                    <h3>Cera piernas completas</h3>
+                    <p>Depilación con cera tibia para piernas completas.</p>
+                </div>
+                <div class="servicio-datos">
+                    <span class="servicio-precio">Desde $10.000</span>
+                    <a href="Contacto.html" class="btn-reservar">Reservar</a>
+                </div>
+            </div>
+
+            <div class="servicio-card">
+                <div class="servicio-info">
+                    <h3>Cera axilas</h3>
+                    <p>Depilación rápida y prolija de la zona de axilas.</p>
+                </div>
+                <div class="servicio-datos">
+                    <span class="servicio-precio">Desde $4.000</span>
+                    <a href="Contacto.html" class="btn-reservar">Reservar</a>
+                </div>
+            </div>
+
+            <div class="servicio-card">
+                <div class="servicio-info">
+                    <h3>Cera bozo / cejas</h3>
+                    <p>Depilación facial de precisión para un acabado prolijo.</p>
+                </div>
+                <div class="servicio-datos">
+                    <span class="servicio-precio">Desde $3.000</span>
+                    <a href="Contacto.html" class="btn-reservar">Reservar</a>
+                </div>
+            </div>
+
+            <div class="servicio-card">
+                <div class="servicio-info">
+                    <h3>Depilación definitiva (por zona)</h3>
+                    <p>Tratamiento de depilación de larga duración, a consultar según zona y cantidad de sesiones.</p>
+                </div>
+                <div class="servicio-datos">
+                    <span class="servicio-precio">Consultar</span>
+                    <a href="Contacto.html" class="btn-reservar">Reservar</a>
+                </div>
+            </div>
+        </section>
+
+        <p class="nota-servicios">* Los precios son orientativos y pueden variar según la zona a tratar. Turnos sujetos a disponibilidad.</p>
+
+        <footer>
+            <div class="footer-columna">
+                <a href="Contacto.html" class="footer-contacto-link">
+                    <h3>Contactanos →</h3>
+                </a>
+                <div class="footer-datos">
+                    <a href="mailto:Boutique@gmail.com">Boutique@gmail.com</a>
+                    <a href="tel:2995339723">299-5339723</a>
+                    <span class="dato-texto">Neuquén, Neuquén</span>
+                </div>
+            </div>
+
+            <div class="footer-columna">
+                <h3>Nuestras redes sociales</h3>
+                <div class="redes-enlaces">
+                    <a href="#">Instagram</a>
+                    <a href="#">TikTok</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

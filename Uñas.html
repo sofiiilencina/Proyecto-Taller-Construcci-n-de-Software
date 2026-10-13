@@ -3,9 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Boutique - Uñas</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
+    <nav id="barra_navegacion">
+        <a href="index.html" class="nav-marca">
+            <span id="logo_nav"></span>
+            <span class="nav-nombre">Boutique</span>
+        </a>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="Capilar.html">Capilar</a>
+            <a href="Uñas.html" class="activo">Uñas</a>
+            <a href="Maquillaje.html">Maquillaje</a>
+            <a href="Depilacion.html">Depilación</a>
+            <a href="Venta.html">Venta</a>
+        </div>
+    </nav>
+
+    <div id="contenedor_principal">
+        <div class="hero-servicio">
+            <h1>Uñas</h1>
+            <p class="hero-tagline">Manicuría y pedicuría profesional para un acabado impecable</p>
+        </div>
+
+        <section class="lista-servicios">
+            <div class="servicio-card">
+                <div class="servicio-info">
+                    <h3>Manicuría tradicional</h3>
+                    <p>Limado, cutículas y esmaltado clásico.</p>
+                </div>
+                <div class="servicio-datos">
+                    <span class="servicio-precio">Desde $6.000</span>
+                    <a href="Contacto.html" class="btn-reservar">Reservar</a>
+                </div>
+            </div>
+
+            <div class="servicio-card">
+                <div class="servicio-info">
+                    <h3>Manicuría semipermanente</h3>
+                    <p>Esmaltado de larga duración, resistente y con brillo.</p>
+                </div>
+                <div class="servicio-datos">
+                    <span class="servicio-precio">Desde $9.500</span>
+                    <a href="Contacto.html" class="btn-reservar">Reservar</a>
+                </div>
+            </div>
+
+            <div class="servicio-card">
+                <div class="servicio-info">
+                    <h3>Pedicuría</h3>
+                    <p>Tratamiento completo de pies con esmaltado a elección.</p>
+                </div>
+                <div class="servicio-datos">
+                    <span class="servicio-precio">Desde $8.000</span>
+                    <a href="Contacto.html" class="btn-reservar">Reservar</a>
+                </div>
+            </div>
+
+            <div class="servicio-card">
+                <div class="servicio-info">
+                    <h3>Uñas esculpidas / soft gel</h3>
+                    <p>Extensión y modelado con acabado natural o a elección.</p>
+                </div>
+                <div class="servicio-datos">
+                    <span class="servicio-precio">Desde $16.000</span>
+                    <a href="Contacto.html" class="btn-reservar">Reservar</a>
+                </div>
+            </div>
+        </section>
+
+        <p class="nota-servicios">* Los precios son orientativos y pueden variar según el diseño elegido. Turnos sujetos a disponibilidad.</p>
+
+        <footer>
+            <div class="footer-columna">
+                <a href="Contacto.html" class="footer-contacto-link">
+                    <h3>Contactanos →</h3>
+                </a>
+                <div class="footer-datos">
+                    <a href="mailto:Boutique@gmail.com">Boutique@gmail.com</a>
+                    <a href="tel:2995339723">299-5339723</a>
+                    <span class="dato-texto">Neuquén, Neuquén</span>
+                </div>
+            </div>
+
+            <div class="footer-columna">
+                <h3>Nuestras redes sociales</h3>
+                <div class="redes-enlaces">
+                    <a href="#">Instagram</a>
+                    <a href="#">TikTok</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

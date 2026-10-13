@@ -3,9 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Boutique - Maquillaje</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
+    <nav id="barra_navegacion">
+        <a href="index.html" class="nav-marca">
+            <span id="logo_nav"></span>
+            <span class="nav-nombre">Boutique</span>
+        </a>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="Capilar.html">Capilar</a>
+            <a href="Uñas.html">Uñas</a>
+            <a href="Maquillaje.html" class="activo">Maquillaje</a>
+            <a href="Depilacion.html">Depilación</a>
+            <a href="Venta.html">Venta</a>
+        </div>
+    </nav>
+
+    <div id="contenedor_principal">
+        <div class="hero-servicio">
+            <h1>Maquillaje</h1>
+            <p class="hero-tagline">Maquillaje profesional para cada ocasión</p>
+        </div>
+
+        <section class="lista-servicios">
+            <div class="servicio-card">
+                <div class="servicio-info">
+                    <h3>Maquillaje social</h3>
+                    <p>Ideal para eventos, cumpleaños y salidas especiales.</p>
+                </div>
+                <div class="servicio-datos">
+                    <span class="servicio-precio">Desde $12.000</span>
+                    <a href="Contacto.html" class="btn-reservar">Reservar</a>
+                </div>
+            </div>
+
+            <div class="servicio-card">
+                <div class="servicio-info">
+                    <h3>Maquillaje de novia</h3>
+                    <p>Incluye prueba previa y producto de larga duración para el gran día.</p>
+                </div>
+                <div class="servicio-datos">
+                    <span class="servicio-precio">Desde $30.000</span>
+                    <a href="Contacto.html" class="btn-reservar">Reservar</a>
+                </div>
+            </div>
+
+            <div class="servicio-card">
+                <div class="servicio-info">
+                    <h3>Maquillaje express</h3>
+                    <p>Un maquillaje rápido y natural para el día a día.</p>
+                </div>
+                <div class="servicio-datos">
+                    <span class="servicio-precio">Desde $7.000</span>
+                    <a href="Contacto.html" class="btn-reservar">Reservar</a>
+                </div>
+            </div>
+
+            <div class="servicio-card">
+                <div class="servicio-info">
+                    <h3>Asesoramiento personalizado</h3>
+                    <p>Clase individual para aprender a maquillarte según tus rasgos.</p>
+                </div>
+                <div class="servicio-datos">
+                    <span class="servicio-precio">Desde $10.000</span>
+                    <a href="Contacto.html" class="btn-reservar">Reservar</a>
+                </div>
+            </div>
+        </section>
+
+        <p class="nota-servicios">* Los precios son orientativos. Turnos sujetos a disponibilidad de la profesional.</p>
+
+        <footer>
+            <div class="footer-columna">
+                <a href="Contacto.html" class="footer-contacto-link">
+                    <h3>Contactanos →</h3>
+                </a>
+                <div class="footer-datos">
+                    <a href="mailto:Boutique@gmail.com">Boutique@gmail.com</a>
+                    <a href="tel:2995339723">299-5339723</a>
+                    <span class="dato-texto">Neuquén, Neuquén</span>
+                </div>
+            </div>
+
+            <div class="footer-columna">
+                <h3>Nuestras redes sociales</h3>
+                <div class="redes-enlaces">
+                    <a href="#">Instagram</a>
+                    <a href="#">TikTok</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

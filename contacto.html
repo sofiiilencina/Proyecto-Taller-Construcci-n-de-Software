@@ -3,39 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="Contacto.css"> 
+    <title>Boutique - Contacto</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <nav id="barra_navegacion">
+        <a href="index.html" class="nav-marca">
+            <span id="logo_nav"></span>
+            <span class="nav-nombre">Boutique</span>
+        </a>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="Capilar.html">Capilar</a>
+            <a href="Uñas.html">Uñas</a>
+            <a href="Maquillaje.html">Maquillaje</a>
+            <a href="Depilacion.html">Depilación</a>
+            <a href="Venta.html">Venta</a>
+        </div>
+    </nav>
+
     <div id="contenedor_principal">
-        <h1>Boutique</h1>
-        <h2>Contacto</h2>
-        <p>¿Tienes alguna consulta? Completa el formulario.</p>
+        <div class="hero-servicio">
+            <h1>Contacto</h1>
+            <p class="hero-tagline">¿Tenés alguna consulta? Completá el formulario o escribinos directamente.</p>
+        </div>
 
-        <form action="#" method="post">
+        <section class="contacto-grid">
+            <p id="mensaje-envio" class="mensaje-envio"></p>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
 
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre" required><br><br>
+                <label for="correo">Correo electrónico:</label><br>
+                <input type="email" id="correo" name="correo" required><br><br>
 
-            <label for="correo">Correo electrónico:</label><br>
-            <input type="email" id="correo" name="correo" required><br><br>
+                <label for="asunto">Asunto:</label><br>
+                <input type="text" id="asunto" name="asunto"><br><br>
 
-            <label for="asunto">Asunto:</label><br>
-            <input type="text" id="asunto" name="asunto"><br><br>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="5" cols="30" required></textarea><br><br>
+                <span id="contador-mensaje" class="contador-caracteres">0 caracteres</span>
 
-            <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name="mensaje" rows="5" cols="30" required></textarea><br><br>
-
-            <input type="submit" value="Enviar">
-
-        </form>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
 
         <footer>
             <div class="footer-columna">
-                <a href="Contacto.html"><h3>Contacto</h3></a>
-                <a href="mailto:Boutique@gmail.com">Boutique@gmail.com</a>
-                <a href="tel:2995339723">299-5339723</a>
-                <span class="dato-texto">Neuquén, Neuquén</span>
+                <a href="Contacto.html" class="footer-contacto-link">
+                    <h3>Contactanos →</h3>
+                </a>
+                <div class="footer-datos">
+                    <a href="mailto:Boutique@gmail.com">Boutique@gmail.com</a>
+                    <a href="tel:2995339723">299-5339723</a>
+                    <span class="dato-texto">Neuquén, Neuquén</span>
+                </div>
             </div>
 
             <div class="footer-columna">
@@ -47,7 +70,6 @@
             </div>
         </footer>
     </div>
-    
+    <script src="script.js"></script>
 </body>
-
 </html>

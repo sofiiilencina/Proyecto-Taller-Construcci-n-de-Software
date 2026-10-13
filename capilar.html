@@ -3,43 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Boutique - Capilar</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Tratamientos Capilares</h1>
-    <p>Cuidamos tu confianza desde la raiz.</p>
+    <nav id="barra_navegacion">
+        <a href="index.html" class="nav-marca">
+            <span id="logo_nav"></span>
+            <span class="nav-nombre">Boutique</span>
+        </a>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="Capilar.html" class="activo">Capilar</a>
+            <a href="Uñas.html">Uñas</a>
+            <a href="Maquillaje.html">Maquillaje</a>
+            <a href="Depilacion.html">Depilación</a>
+            <a href="Venta.html">Venta</a>
+        </div>
+    </nav>
 
-        <div class="corte">
-            <h3>Corte de Cabello</h3>
-            <p>Cortes modernos y personalizados para cada estilo.</p>
+    <div id="contenedor_principal">
+        <div class="hero-servicio">
+            <h1>Capilar</h1>
+            <p class="hero-tagline">Cortes, color y tratamientos pensados para cada tipo de cabello</p>
         </div>
 
-        <div class="tintura">
-                <h3>Tintura</h3>
-                <p>Amplia variedad de colores y con un cuidado excepcional.</p>
-        </div>
+        <section class="lista-servicios">
+            <div class="servicio-card">
+                <div class="servicio-info">
+                    <h3>Corte</h3>
+                    <p>Corte personalizado según tu tipo de rostro y textura de cabello.</p>
+                </div>
+                <div class="servicio-datos">
+                    <span class="servicio-precio">Desde $15.000</span>
+                    <a href="Contacto.html" class="btn-reservar">Reservar</a>
+                </div>
+            </div>
 
-        <div class="peinado">
-                <h3>Peinados</h3>
-                <p>Peinados para cualquier tipo de evento.</p>
-        </div>
+            <div class="servicio-card">
+                <div class="servicio-info">
+                    <h3>Coloración</h3>
+                    <p>Color completo, mechas o balayage con productos profesionales.</p>
+                </div>
+                <div class="servicio-datos">
+                    <span class="servicio-precio">Desde $28.000</span>
+                    <a href="Contacto.html" class="btn-reservar">Reservar</a>
+                </div>
+            </div>
 
-        <div class="alisado">
-                <h3>Alisados</h3>
-                <p>Alisados para un pelo brillante y liso.</p>
-        </div>
+            <div class="servicio-card">
+                <div class="servicio-info">
+                    <h3>Brushing</h3>
+                    <p>Peinado con secador para un look prolijo y con movimiento.</p>
+                </div>
+                <div class="servicio-datos">
+                    <span class="servicio-precio">Desde $9.000</span>
+                    <a href="Contacto.html" class="btn-reservar">Reservar</a>
+                </div>
+            </div>
 
-        <div class="hidratacion">
-                <h3>Hidtratación capilar</h3>
-                <p>Nutrición profunda para recuperar la salud del cabello.</p>
-        </div>
+            <div class="servicio-card">
+                <div class="servicio-info">
+                    <h3>Tratamiento de hidratación / keratina</h3>
+                    <p>Nutrición profunda para recuperar brillo y suavidad del cabello.</p>
+                </div>
+                <div class="servicio-datos">
+                    <span class="servicio-precio">Desde $22.000</span>
+                    <a href="Contacto.html" class="btn-reservar">Reservar</a>
+                </div>
+            </div>
 
-        <div class="mechas">
-            <h3>Mechas y Reflejos</h3>
-            <p>Ilumina tu cabello con técnicas modernas y naturales.</p>
-        </div>
+            <div class="servicio-card">
+                <div class="servicio-info">
+                    <h3>Alisado</h3>
+                    <p>Alisado profesional para un cabello liso y manejable por más tiempo.</p>
+                </div>
+                <div class="servicio-datos">
+                    <span class="servicio-precio">Desde $35.000</span>
+                    <a href="Contacto.html" class="btn-reservar">Reservar</a>
+                </div>
+            </div>
+        </section>
 
+        <p class="nota-servicios">* Los precios son orientativos y pueden variar según largo y estado del cabello. Turnos sujetos a disponibilidad y diagnóstico previo.</p>
 
+        <footer>
+            <div class="footer-columna">
+                <a href="Contacto.html" class="footer-contacto-link">
+                    <h3>Contactanos →</h3>
+                </a>
+                <div class="footer-datos">
+                    <a href="mailto:Boutique@gmail.com">Boutique@gmail.com</a>
+                    <a href="tel:2995339723">299-5339723</a>
+                    <span class="dato-texto">Neuquén, Neuquén</span>
+                </div>
+            </div>
 
+            <div class="footer-columna">
+                <h3>Nuestras redes sociales</h3>
+                <div class="redes-enlaces">
+                    <a href="#">Instagram</a>
+                    <a href="#">TikTok</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

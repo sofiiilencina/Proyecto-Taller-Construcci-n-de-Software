@@ -7,16 +7,39 @@
     <link rel="stylesheet" href="index.css"> 
 </head>
 <body>
+    <nav id="barra_navegacion">
+        <a href="index.html" class="nav-marca">
+            <span id="logo_nav"></span>
+            <span class="nav-nombre">Boutique</span>
+        </a>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <div class="nav-links">
+            <a href="index.html" class="activo">Inicio</a>
+            <a href="Capilar.html">Capilar</a>
+            <a href="Uñas.html">Uñas</a>
+            <a href="Maquillaje.html">Maquillaje</a>
+            <a href="Depilacion.html">Depilación</a>
+            <a href="Venta.html">Venta</a>
+        </div>
+    </nav>
+
     <div id="contenedor_principal">
+        <div class="hero">
         <h1>Boutique</h1>
-        <section>
-            <h2>¿Quienes somos?</h2>
-            <p>Somos un espacio pensado exclusivamente para resaltar tu belleza natural y brindarte un momento de mimo y 
-                desconexión. En nuestra estética, combinamos profesionalismo, vanguardia y una atención totalmente personalizada 
-                para ofrecerte servicios de alta calidad en cuidado capilar, manicuría, maquillaje profesional y depilación.<br/>
-                Nuestro objetivo es que encuentres en un solo lugar todo lo que necesitás para sentirte renovada, cómoda y segura. 
-                Nos apasiona cuidar cada detalle para que tu experiencia sea única desde el primer momento. ¡Te invitamos a conocernos 
-                y a disfrutar del cuidado que te merecés!</p>
+            <p class="hero-tagline">Tu espacio de belleza y bienestar</p>
+        </div>
+
+        <section class="seccion-nosotros">
+            <div class="nosotros-texto">
+                <h2>¿Quienes somos?</h2>
+                <p class="texto-nosotros">Somos un espacio pensado exclusivamente para resaltar tu belleza natural y brindarte un momento de mimo y 
+                    desconexión. En nuestra estética, combinamos profesionalismo, vanguardia y una atención totalmente personalizada 
+                    para ofrecerte servicios de alta calidad en cuidado capilar, manicuría, maquillaje profesional y depilación.<br/>
+                    Nuestro objetivo es que encuentres en un solo lugar todo lo que necesitás para sentirte renovada, cómoda y segura. 
+                    Nos apasiona cuidar cada detalle para que tu experiencia sea única desde el primer momento. ¡Te invitamos a conocernos 
+                    y a disfrutar del cuidado que te merecés!</p>
+            </div>
+            <div class="nosotros-imagen" id="imagen_nosotros"></div>
         </section>
 
         <h2>Nuestros Servicios</h2>
@@ -57,14 +80,20 @@
 
         <footer>
             <div class="footer-columna">
-                <a href="Contacto.html"><h3>Contacto</h3></a>
-                <a href="mailto:Boutique@gmail.com">Boutique@gmail.com</a>
-                <a href="tel:2995339723">299-5339723</a>
-                <span class="dato-texto">Neuquén, Neuquén</span>
+                <a href="Contacto.html" class="footer-contacto-link">
+                    <h3>Contactanos →</h3>
+                </a>
+                <div class="footer-datos">
+                    <a href="mailto:Boutique@gmail.com">Boutique@gmail.com</a>
+                    <a href="tel:2995339723">299-5339723</a>
+                    <span class="dato-texto">Neuquén, Neuquén</span>
+                </div>
             </div>
 
             <div class="footer-columna">
-                <h3>Nuestras redes sociales</h3>
+                <a class="footer-redes">
+                    <h3>Nuestras redes sociales</h3>
+                </a>
                 <div class="redes-enlaces">
                     <a href="#">Instagram</a>
                     <a href="#">TikTok</a>
@@ -73,6 +102,6 @@
         </footer>
 
     </div>
-
+    <script src="script.js"></script>
 </body>
 </html>
