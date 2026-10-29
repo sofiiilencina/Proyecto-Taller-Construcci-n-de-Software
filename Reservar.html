@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique - Reservar Turno</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav id="barra_navegacion">
+        <a href="index.html" class="nav-marca">
+            <span id="logo_nav"></span>
+            <span class="nav-nombre">Boutique</span>
+        </a>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="Capilar.html">Capilar</a>
+            <a href="Uñas.html">Uñas</a>
+            <a href="Maquillaje.html">Maquillaje</a>
+            <a href="Depilacion.html">Depilación</a>
+            <a href="Venta.html">Venta</a>
+        </div>
+    </nav>
+
+    <div id="contenedor_principal">
+        <div class="hero-servicio">
+            <h1>Reservar Turno</h1>
+            <p class="hero-tagline">Elegí el profesional, la fecha y la hora para tu atención</p>
+        </div>
+
+        <div class="reserva-card">
+            <form id="form-reserva">
+                <div class="campo-reserva">
+                    <label for="select-profesional">Profesional:</label>
+                    <select id="select-profesional" required>
+                        <option value="">Cargando profesionales...</option>
+                    </select>
+                </div>
+
+                <div class="campo-reserva">
+                    <label for="select-fecha">Fecha disponible:</label>
+                    <select id="select-fecha" required disabled>
+                        <option value="">Selecciona un profesional primero</option>
+                    </select>
+                </div>
+
+                <div class="campo-reserva">
+                    <label for="select-hora">Horario disponible:</label>
+                    <select id="select-hora" required disabled>
+                        <option value="">Selecciona una fecha primero</option>
+                    </select>
+                </div>
+
+                <div class="campo-reserva">
+                    <label for="nombre-cliente">Tu Nombre completo:</label>
+                    <input type="text" id="nombre-cliente" placeholder="Ingresá tu nombre" required>
+                </div>
+
+                <div class="acciones-reserva">
+                    <button type="button" id="btn-cancelar" class="btn-secundario">Cancelar</button>
+                    <button type="submit" id="btn-aceptar" class="btn-primario">Aceptar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de Confirmación Pasos 1 y 2 -->
+    <div id="modal-confirmacion" class="modal-overlay">
+        <div class="modal-contenido">
+            <h3 id="modal-titulo">Confirmar Turno</h3>
+            <p id="modal-mensaje"></p>
+            <div class="acciones-reserva" id="modal-botones">
+                <button id="btn-modal-cancelar" class="btn-secundario">Cancelar</button>
+                <button id="btn-modal-confirmar" class="btn-primario">Confirmar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-columna">
+            <a href="Contacto.html" class="footer-contacto-link">
+                <h3>Contactanos →</h3>
+            </a>
+            <div class="footer-datos">
+                <a href="mailto:Boutique@gmail.com">Boutique@gmail.com</a>
+                <a href="tel:2995339723">299-5339723</a>
+                <span class="dato-texto">Neuquén, Neuquén</span>
+            </div>
+        </div>
+        <div class="footer-columna">
+            <h3>Nuestras redes sociales</h3>
+            <div class="redes-enlaces">
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="turnos.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique - Productos</title>
+    <link rel="stylesheet" href="../../index.css">
+</head>
+<body>
+    <nav id="barra_navegacion">
+        <a href="../../index.html" class="nav-marca">
+            <span id="logo_nav"></span>
+            <span class="nav-nombre">Boutique</span>
+        </a>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <div class="nav-links">
+            <a href="../../index.html">Inicio</a>
+            <a href="../../Capilar.html">Capilar</a>
+            <a href="../../Uñas.html">Uñas</a>
+            <a href="../../Maquillaje.html">Maquillaje</a>
+            <a href="../../Depilacion.html">Depilación</a>
+            <a href="../../Venta.html" class="activo">Venta</a>
+        </div>
+    </nav>
+
+    <div id="contenedor_principal">
+        <div class="hero-servicio">
+            <h1>Fresas para torno</h1>
+            <p class="hero-tagline">Descripción breve de los productos disponibles</p>
+        </div>
+
+        <section class="catalogo-productos">
+            <!-- Producto 1 -->
+            <div class="producto-card">
+                <div class="producto-imagen" style="background-image: url('Imágenes/producto1.jpeg');"></div>
+                <div class="producto-info">
+                    <h3>Nombre del Producto</h3>
+                    <p>Descripción detallada del producto, beneficios y presentación.</p>
+                    <span class="producto-precio">$15.000</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="producto-card">
+                <div class="producto-imagen" style="background-image: url('Imágenes/producto2.jpeg');"></div>
+                <div class="producto-info">
+                    <h3>Nombre del Producto</h3>
+                    <p>Descripción detallada del producto, beneficios y presentación.</p>
+                    <span class="producto-precio">$22.000</span>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-columna">
+                <a href="../../Contacto.html" class="footer-contacto-link">
+                    <h3>Contactanos →</h3>
+                </a>
+                <div class="footer-datos">
+                    <a href="mailto:Boutique@gmail.com">Boutique@gmail.com</a>
+                    <a href="tel:2995339723">299-5339723</a>
+                    <span class="dato-texto">Neuquén, Neuquén</span>
+                </div>
+            </div>
+            <div class="footer-columna">
+                <h3>Nuestras redes sociales</h3>
+                <div class="redes-enlaces">
+                    <a href="#">Instagram</a>
+                    <a href="#">TikTok</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

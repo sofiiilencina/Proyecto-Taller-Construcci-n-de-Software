@@ -133,6 +133,17 @@ p{
 }
 
 .servicio-item {
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-decoration: none; 
+    width: 210px; 
+    text-align: center;
+}
+
+.venta-item {
+    position: relative;
     display: flex;
     flex-direction: column; 
     align-items: center; 
@@ -155,6 +166,15 @@ p{
 }
 
 .texto-servicio {
+    margin: 15px 0 0 0;
+    font-size: 26px ;
+    font-weight: bold;
+    color: #ffffff ;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.texto-venta {
     margin: 15px 0 0 0;
     font-size: 26px ;
     font-weight: bold;
@@ -838,6 +858,59 @@ input[type="submit"]:hover {
     background-image: url('Imágenes/Boton_pelo.jpeg');
 }
 
+#img_esmaltes_semipermanentes{
+    background-image: url('Imágenes/Esmaltes_semipermanentes.jpeg');
+}
+
+#img_esmaltes_tradicionales{
+    background-image: url('Imágenes/Esmaltes_tradicionales.jpeg');
+}
+
+#img_esmaltes_gel{
+    background-image: url('Imágenes/Esmaltes_gel.jpeg');
+}
+
+#img_base_top_coat{
+    background-image: url('Imágenes/Base_top_coat.jpeg');
+}
+
+#img_lamparas_LED{
+    background-image: url('Imágenes/Lámparas_LED.jpeg');
+}
+
+#img_torno{
+    background-image: url('Imágenes/Tornos.jpeg');
+}
+
+#img_fresas_torno{
+    background-image: url('Imágenes/Fresas_torno.jpeg');
+}
+
+#img_extractores_polvo{
+    background-image: url('Imágenes/Extractor_polvo.jpeg');
+}
+
+#img_pinceles_art{
+    background-image: url('Imágenes/Pinceles_Nail_Art.jpeg');
+}
+
+#img_pinceles_acrilico{
+    background-image: url('Imágenes/Pinceles_Acrilico_Gel.jpeg');
+}
+
+#img_limas{
+    background-image: url('Imágenes/Limas_Pulidores.jpeg');
+}
+
+#img_repujadores_alicates{
+    background-image: url('Imágenes/Repujadores_Alicates.jpeg');
+}
+
+#img_aceite_cuticulas{
+    background-image: url('Imágenes/Aceite_cuticulas.jpeg');
+}
+
+
 .menu-toggle{
     display: none;
     background: none;
@@ -877,10 +950,6 @@ input[type="submit"]:hover {
     }
 }
 
-
-.servicio-item{
-    position: relative;
-}
 
 .tip-hover{
     position: absolute;
@@ -946,4 +1015,227 @@ input[type="submit"]:hover {
     background-color: #ffe4e6; /* Fondo rosa pastel */
     color: #9f1239;            /* Texto rosa/rojo oscuro */
     border: 1px solid #fecdd3;  /* Borde rosa */
+}
+
+/* ------------------------------------------------------------
+   ESTILOS PARA LA INTERFAZ DE TURNOS Y MODAL
+------------------------------------------------------------ */
+.reserva-card {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 35px;
+    background: #212021;
+    border: 3px solid rgb(166, 92, 236);
+    border-radius: 20px;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.campo-reserva {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.campo-reserva label {
+    margin-bottom: 8px;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgb(137, 43, 226);
+    border-radius: 8px;
+    background-color: #212021;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+select:focus {
+    border-color: rgb(246, 112, 181);
+    outline: none;
+}
+
+select:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.acciones-reserva {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.btn-primario, .btn-secundario {
+    flex: 1;
+    padding: 12px 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primario {
+    background: rgb(137, 43, 226);
+    color: #ffffff;
+    border: 2px solid rgb(166, 92, 236);
+}
+
+.btn-primario:hover {
+    background: rgb(246, 112, 181);
+    border-color: rgb(246, 112, 181);
+    transform: scale(1.03);
+}
+
+.btn-secundario {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #666666;
+}
+
+.btn-secundario:hover {
+    background: #333333;
+    border-color: #999999;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modal-overlay.activo {
+    display: flex;
+}
+
+.modal-contenido {
+    background: #212021;
+    border: 3px solid rgb(246, 112, 181);
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 450px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+.modal-contenido h3 {
+    color: rgb(246, 112, 181);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.modal-contenido p {
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 20px 0;
+}
+
+/* ------------------------------------------------------------
+   ESTILOS PARA LAS PÁGINAS DE CATÁLOGO DE PRODUCTOS
+------------------------------------------------------------ */
+.catalogo-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.producto-card {
+    background: #212021;
+    border: 3px solid rgb(166, 92, 236);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.producto-card:hover {
+    transform: scale(1.02);
+    border-color: rgb(246, 112, 181);
+}
+
+.producto-imagen {
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #1a191a;
+    border-bottom: 2px solid rgb(137, 43, 226);
+}
+
+.producto-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: left;
+}
+
+.producto-info h3 {
+    color: rgb(246, 112, 181);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 24px;
+    margin: 0 0 10px 0;
+}
+
+.producto-info p {
+    color: #dddddd;
+    font-size: 16px;
+    font-style: normal;
+    text-align: left;
+    margin: 0 0 15px 0;
+    flex: 1;
+}
+
+.producto-precio {
+    color: rgb(166, 92, 236);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.btn-comprar {
+    background: rgb(137, 43, 226);
+    border: 2px solid rgb(166, 92, 236);
+    border-radius: 20px;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-comprar:hover {
+    background: rgb(246, 112, 181);
+    border-color: rgb(246, 112, 181);
+    transform: scale(1.03);
 }
