@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique - Iniciar Sesión</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav id="barra_navegacion">
+        <a href="index.html" class="nav-marca">
+            <span id="logo_nav"></span>
+            <span class="nav-nombre">Boutique</span>
+        </a>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="Capilar.html">Capilar</a>
+            <a href="Uñas.html">Uñas</a>
+            <a href="Maquillaje.html">Maquillaje</a>
+            <a href="Depilacion.html">Depilación</a>
+            <a href="Venta.html">Venta</a>
+        </div>
+    </nav>
+
+    <div id="contenedor_principal">
+        <div class="hero-servicio">
+            <h1>Iniciar Sesión</h1>
+            <p class="hero-tagline">Ingresá a tu cuenta para gestionar tus turnos y compras</p>
+        </div>
+
+        <form id="form-login" class="login-form">
+            <div class="campo-login">
+                <label for="correo-login">Correo electrónico</label>
+                <input type="email" id="correo-login" placeholder="tucorreo@gmail.com" required>
+            </div>
+
+            <div class="campo-login">
+                <label for="password-login">Contraseña</label>
+                <input type="password" id="password-login" placeholder="Ingresá tu contraseña" required>
+            </div>
+
+            <button type="submit" class="btn-login-enviar">Ingresar</button>
+
+            <p class="login-texto-footer">
+                ¿No tenés una cuenta? <a href="registro.html" class="login-link">Registrate acá</a>
+            </p>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-columna">
+            <a href="Contacto.html" class="footer-contacto-link">
+                <h3>Contactanos →</h3>
+            </a>
+            <div class="footer-datos">
+                <a href="mailto:Boutique@gmail.com">Boutique@gmail.com</a>
+                <a href="tel:2995339723">299-5339723</a>
+                <span class="dato-texto">Neuquén, Neuquén</span>
+            </div>
+        </div>
+        <div class="footer-columna">
+            <h3>Nuestras redes sociales</h3>
+            <div class="redes-enlaces">
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
