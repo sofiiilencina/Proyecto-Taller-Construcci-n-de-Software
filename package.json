@@ -1,0 +1,32 @@
+{
+  "name": "proyecto-taller-construcci-n-de-software",
+  "version": "1.0.0",
+  "description": "Pagina de turnos y cosmeticos",
+  "keywords": [
+    "cosmeticos",
+    "uñas",
+    "maquillaje",
+    "pelo",
+    "depilacion"
+  ],
+  "homepage": "https://github.com/sofiiilencina/Proyecto-Taller-Construcci-n-de-Software#readme",
+  "bugs": {
+    "url": "https://github.com/sofiiilencina/Proyecto-Taller-Construcci-n-de-Software/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sofiiilencina/Proyecto-Taller-Construcci-n-de-Software.git"
+  },
+  "license": "ISC",
+  "author": "Sofia Lencina, Mateo Rodriguez, Guadalupe Medel",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "mysql2": "^3.24.6"
+  }
+}
