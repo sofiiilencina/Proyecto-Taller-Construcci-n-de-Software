@@ -20,38 +20,117 @@
             <a href="../../Maquillaje.html">Maquillaje</a>
             <a href="../../Depilacion.html">Depilación</a>
             <a href="../../Venta.html" class="activo">Venta</a>
+            <a href="#" class="abrir-carrito-trigger">Mi Carrito 🛒</a>
         </div>
     </nav>
 
     <div id="contenedor_principal">
-        <div class="hero-servicio">
-            <h1>Esmaltes en gel / Builder gel</h1>
-            <p class="hero-tagline">Descripción breve de los productos disponibles</p>
+    <!-- Botón para regresar a la página anterior -->
+    <div style="margin-bottom: 20px;">
+        <a href="../../Uñas_venta.html" class="btn-secundario" style="text-decoration: none; display: inline-block; text-align: center; line-height: normal;">← Volver</a>
+    </div>
+
+    <div class="hero-servicio">
+        <h1>Esmaltes en gel / Builder gel</h1>
+        <p class="hero-tagline">Colores intensos, uñas resistentes y acabados profesionales que duran más tiempo</p>
+    </div>
+
+    <section class="catalogo-productos">
+
+        <!-- Producto 1 -->
+        <div class="producto-card" data-id="1" data-nombre="OPI GelColor Gel Nail Polish" data-precio="24500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/OPI_GelColor_Gel_Nail_Polish.jfif');"></div>
+            <div class="producto-info">
+                <h3>OPI GelColor Gel Nail Polish</h3>
+                <p>Esmalte semipermanente disponible en una amplia variedad de colores. Se cura con lámpara LED o UV compatible y ofrece un acabado brillante y duradero.</p>
+                <span class="producto-precio">$24.500</span>
+
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
         </div>
 
-        <section class="catalogo-productos">
-            <!-- Producto 1 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto1.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$15.000</span>
-                    <button class="btn-comprar">Comprar</button>
-                </div>
-            </div>
+        <!-- Producto 2 -->
+        <div class="producto-card" data-id="2" data-nombre="Gelish Soak-Off Gel Polish" data-precio="22000">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/Gelish_Soak-Off_Gel_Polish.jfif');"></div>
+            <div class="producto-info">
+                <h3>Gelish Soak-Off Gel Polish</h3>
+                <p>Esmalte en gel de uso profesional que se aplica en capas finas y se cura con lámpara compatible. Permite conseguir una manicura uniforme, con color intenso y brillo.</p>
+                <span class="producto-precio">$22.000</span>
 
-            <!-- Producto 2 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto2.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$22.000</span>
-                    <button class="btn-comprar">Comprar</button>
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="producto-card" data-id="3" data-nombre="The GelBottle BIAB Builder In A Bottle" data-precio="32000">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/The_GelBottle.jfif');"></div>
+            <div class="producto-info">
+                <h3>The GelBottle BIAB Builder In A Bottle</h3>
+                <p>Gel constructor en formato de botella, diseñado para reforzar la uña natural y crear una estructura resistente. Ideal para manicuras con acabado natural o con color.</p>
+                <span class="producto-precio">$32.000</span>
+
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="producto-card" data-id="4" data-nombre="Mia Secret Builder Gel" data-precio="19500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/Mia_Secret_Builder_Gel.jfif');"></div>
+            <div class="producto-info">
+                <h3>Mia Secret Builder Gel</h3>
+                <p>Gel constructor para esculpir, reforzar y dar forma a las uñas. Permite realizar extensiones y construir una estructura firme, siguiendo las indicaciones de aplicación del producto.</p>
+                <span class="producto-precio">$19.500</span>
+
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
 
         <footer>
             <div class="footer-columna">
@@ -73,6 +152,6 @@
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="../../script.js"></script>
 </body>
 </html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique - Inicio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav id="barra_navegacion">
+        <a href="index_admin.html" class="nav-marca">
+            <span id="logo_nav"></span>
+            <span class="nav-nombre">Boutique</span>
+        </a>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <div class="nav-links">
+            <a href="index_admin.html" class="activo">Inicio</a>
+            <a href="gestion-staff.html">Gestión STAFF</a>
+            <a href="gestion-productos.html">Gestión Productos</a>
+        </div>
+    </nav>
+
+
+    <div id="contenedor_principal">
+        <div class="hero-servicio">
+            <h1>Panel de Control</h1>
+            <p class="hero-tagline">Bienvenida al sistema de gestión y administración de Boutique</p>
+        </div>
+
+        <div style="max-width: 800px; margin: 40px auto; display: flex; gap: 30px; justify-content: center; flex-wrap: wrap;">
+            
+            <!-- Tarjeta de Acceso a Staff -->
+            <div style="background: #212021; padding: 30px; border-radius: 20px; border: 3px solid rgb(166, 92, 236); width: 320px; text-align: center;">
+                <h3 style="color: rgb(246, 112, 181); font-family: 'Times New Roman', Times, serif; font-style: italic;">Gestión de Staff</h3>
+                <p style="color: #ccc; margin: 15px 0 25px 0;">Administrá los profesionales, sus especialidades y disponibilidades.</p>
+                <a href="gestion-staff.html" style="background: rgb(137, 43, 226); color: #fff; padding: 10px 20px; border-radius: 15px; text-decoration: none; font-weight: bold;">Ir a Staff</a>
+            </div>
+
+            <!-- Tarjeta de Acceso a Productos -->
+            <div style="background: #212021; padding: 30px; border-radius: 20px; border: 3px solid rgb(246, 112, 181); width: 320px; text-align: center;">
+                <h3 style="color: rgb(166, 92, 236); font-family: 'Times New Roman', Times, serif; font-style: italic;">Gestión de Productos</h3>
+                <p style="color: #ccc; margin: 15px 0 25px 0;">Controlá el stock, los precios y el catálogo de artículos a la venta.</p>
+                <a href="gestion-productos.html" style="background: rgb(246, 112, 181); color: #fff; padding: 10px 20px; border-radius: 15px; text-decoration: none; font-weight: bold;">Ir a Productos</a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

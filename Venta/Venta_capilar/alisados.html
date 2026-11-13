@@ -20,38 +20,107 @@
             <a href="../../Maquillaje.html">Maquillaje</a>
             <a href="../../Depilacion.html">Depilación</a>
             <a href="../../Venta.html" class="activo">Venta</a>
+            <a href="#" class="abrir-carrito-trigger">Mi Carrito 🛒</a>
         </div>
     </nav>
 
     <div id="contenedor_principal">
-        <div class="hero-servicio">
-            <h1>Alisados, plastificados y keratinas</h1>
-            <p class="hero-tagline">Descripción breve de los productos disponibles</p>
+    <!-- Botón para regresar a la página anterior -->
+    <div style="margin-bottom: 20px;">
+        <a href="../../Capilar_venta.html" class="btn-secundario" style="text-decoration: none; display: inline-block; text-align: center; line-height: normal;">← Volver</a>
+    </div>
+
+    <div class="hero-servicio">
+        <h1>Alisados, plastificados y keratinas</h1>
+        <p class="hero-tagline">Tratamientos capilares para controlar el frizz, aportar brillo y mejorar la suavidad del cabello.</p>
+    </div>
+
+    <section class="catalogo-productos">
+        <!-- Producto 1 -->
+        <div class="producto-card" data-id="1" data-nombre="Alisado Capilar Keratina Brasilera" data-precio="18500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Alisado_Capilar_Keratina_Brasilera.jfif');"></div>
+            <div class="producto-info">
+                <h3>Alisado Capilar Keratina Brasilera</h3>
+                <p>Tratamiento alisador de uso profesional diseñado para ayudar a controlar el frizz y dejar el cabello más suave y manejable. Presentación para uso capilar.</p>
+                <span class="producto-precio">$18.500</span>
+
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
         </div>
 
-        <section class="catalogo-productos">
-            <!-- Producto 1 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto1.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$15.000</span>
-                    <button class="btn-comprar">Comprar</button>
-                </div>
-            </div>
+        <!-- Producto 2 -->
+        <div class="producto-card" data-id="2" data-nombre="Tratamiento de Keratina Capilar" data-precio="22000">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Tratamiento_Keratina_Capilar.jfif');"></div>
+            <div class="producto-info">
+                <h3>Tratamiento de Keratina Capilar</h3>
+                <p>Tratamiento acondicionador que ayuda a mejorar la apariencia del cabello seco o dañado, aportando suavidad, brillo y facilidad para peinar.</p>
+                <span class="producto-precio">$22.000</span>
 
-            <!-- Producto 2 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto2.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$22.000</span>
-                    <button class="btn-comprar">Comprar</button>
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="producto-card" data-id="3" data-nombre="Plastificado Capilar con Brillo" data-precio="16000">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Plastificado_Capilar_Brillo.jfif');"></div>
+            <div class="producto-info">
+                <h3>Plastificado Capilar con Brillo</h3>
+                <p>Tratamiento cosmético que ayuda a dejar el cabello más brillante, suave y manejable. Ideal para mejorar el aspecto de la fibra capilar.</p>
+                <span class="producto-precio">$16.000</span>
+
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="producto-card" data-id="4" data-nombre="Máscara Capilar con Keratina" data-precio="12500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Máscara_Capilar_Keratina.jfif');"></div>
+            <div class="producto-info">
+                <h3>Máscara Capilar con Keratina</h3>
+                <p>Máscara de tratamiento intensivo que ayuda a acondicionar el cabello, reducir el aspecto reseco y facilitar el desenredado. Ideal para complementar la rutina capilar.</p>
+                <span class="producto-precio">$12.500</span>
+
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
         <footer>
             <div class="footer-columna">
@@ -73,6 +142,6 @@
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="../../script.js"></script>
 </body>
 </html>

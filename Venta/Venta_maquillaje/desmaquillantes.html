@@ -20,38 +20,115 @@
             <a href="../../Maquillaje.html">Maquillaje</a>
             <a href="../../Depilacion.html">Depilación</a>
             <a href="../../Venta.html" class="activo">Venta</a>
+            <a href="#" class="abrir-carrito-trigger">Mi Carrito 🛒</a>
         </div>
     </nav>
 
     <div id="contenedor_principal">
+        <!-- Botón para regresar a la página anterior -->
+        <div style="margin-bottom: 20px;">
+            <a href="../../Maquillaje_venta.html" class="btn-secundario" style="text-decoration: none; display: inline-block; text-align: center; line-height: normal;">← Volver</a>
+        </div>
+
         <div class="hero-servicio">
             <h1>Desmaquillantes y agua micelar</h1>
-            <p class="hero-tagline">Descripción breve de los productos disponibles</p>
+            <p class="hero-tagline">Limpieza profunda, remoción suave y frescura para cuidar e hidratar tu piel</p>
         </div>
 
         <section class="catalogo-productos">
             <!-- Producto 1 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto1.jpeg');"></div>
+            <div class="producto-card" data-id="1" data-nombre="Agua Micelar Trifásica Todo en 1" data-precio="14800">
+                <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Maquillaje/Agua_Micelar_Trifásica.jfif');"></div>
                 <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$15.000</span>
+                    <h3>Agua Micelar Trifásica Todo en 1</h3>
+                    <p>Elimina maquillaje waterproof, limpia y nutre en una sola pasada sin dejar sensación grasosa en el rostro.</p>
+                    <span class="producto-precio">$14.800</span>
+                    
+                    <!-- Botón Inicial de Comprar -->
                     <button class="btn-comprar">Comprar</button>
+
+                    <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                    <div class="selector-cantidad-container" style="display: none;">
+                        <div class="controles-cantidad">
+                            <button type="button" class="btn-restar">-</button>
+                            <span class="cantidad-num">1</span>
+                            <button type="button" class="btn-sumar">+</button>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al carrito</button>
+                    </div>
                 </div>
             </div>
 
             <!-- Producto 2 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto2.jpeg');"></div>
+            <div class="producto-card" data-id="2" data-nombre="Bálsamo Desmaquillante Limpiador" data-precio="19500">
+                <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Maquillaje/Bálsamo_Desmaquillante_Limpiador.jfif');"></div>
                 <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$22.000</span>
+                    <h3>Bálsamo Desmaquillante Limpiador</h3>
+                    <p>Textura sólida que se transforma en aceite al contacto con la piel, disolviendo hasta el maquillaje más pesado con facilidad.</p>
+                    <span class="producto-precio">$19.500</span>
+                    
+                    <!-- Botón Inicial de Comprar -->
                     <button class="btn-comprar">Comprar</button>
+
+                    <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                    <div class="selector-cantidad-container" style="display: none;">
+                        <div class="controles-cantidad">
+                            <button type="button" class="btn-restar">-</button>
+                            <span class="cantidad-num">1</span>
+                            <button type="button" class="btn-sumar">+</button>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="producto-card" data-id="3" data-nombre="Leche Limpiadora Hidratante" data-precio="13200">
+                <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Maquillaje/Leche_Limpiadora_Hidratante.jfif');"></div>
+                <div class="producto-info">
+                    <h3>Leche Limpiadora Hidratante</h3>
+                    <p>Fórmula cremosa ideal para pieles sensibles o secas, limpia suavemente mientras aporta hidratación y confort.</p>
+                    <span class="producto-precio">$13.200</span>
+                    
+                    <!-- Botón Inicial de Comprar -->
+                    <button class="btn-comprar">Comprar</button>
+
+                    <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                    <div class="selector-cantidad-container" style="display: none;">
+                        <div class="controles-cantidad">
+                            <button type="button" class="btn-restar">-</button>
+                            <span class="cantidad-num">1</span>
+                            <button type="button" class="btn-sumar">+</button>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="producto-card" data-id="4" data-nombre="Desmaquillante Bifásico para Ojos y Labios" data-precio="12900">
+                <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Maquillaje/Desmaquillante-Bifásico.jfif');"></div>
+                <div class="producto-info">
+                    <h3>Desmaquillante Bifásico Ojos y Labios</h3>
+                    <p>Combina fase acuosa y aceitosa para remover máscara de pestañas y labiales de larga duración sin irritar la zona.</p>
+                    <span class="producto-precio">$12.900</span>
+                    
+                    <!-- Botón Inicial de Comprar -->
+                    <button class="btn-comprar">Comprar</button>
+
+                    <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                    <div class="selector-cantidad-container" style="display: none;">
+                        <div class="controles-cantidad">
+                            <button type="button" class="btn-restar">-</button>
+                            <span class="cantidad-num">1</span>
+                            <button type="button" class="btn-sumar">+</button>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al carrito</button>
+                    </div>
                 </div>
             </div>
         </section>
+
 
         <footer>
             <div class="footer-columna">
@@ -73,6 +150,6 @@
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="../../script.js"></script>
 </body>
 </html>

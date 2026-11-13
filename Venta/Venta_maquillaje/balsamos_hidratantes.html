@@ -20,8 +20,7 @@
             <a href="../../Maquillaje.html">Maquillaje</a>
             <a href="../../Depilacion.html">Depilación</a>
             <a href="../../Venta.html" class="activo">Venta</a>
-            <!-- Enlace del carrito con contador dinámico -->
-            <a href="#" id="enlace-carrito">🛒 Carrito (<span id="contador-carrito">0</span>)</a>
+           <a href="#" class="abrir-carrito-trigger">Mi Carrito 🛒</a>
         </div>
     </nav>
 
@@ -33,22 +32,20 @@
 
         <div class="hero-servicio">
             <h1>Bálsamos e hidratantes</h1>
-            <p class="hero-tagline">Descripción breve de los productos disponibles</p>
+            <p class="hero-tagline">Nutrición profunda, reparación y suavidad para unos labios saludables</p>
         </div>
 
         <section class="catalogo-productos">
             <!-- Producto 1 -->
-            <div class="producto-card" data-id="1" data-nombre="Nombre Producto" data-precio="15000">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto1.jpeg');"></div>
+            <div class="producto-card" data-id="1" data-nombre="Bálsamo Labial Reparador con Manteca de Karité" data-precio="14500">
+                <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Maquillaje/Bálsamo_Labial_Manteca_Karité.jfif');"></div>
                 <div class="producto-info">
-                    <h3>Nombre Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$15.000</span>
+                    <h3>Bálsamo Labial con Manteca de Karité</h3>
+                    <p>Fórmula ultra nutritiva que repara los labios secos y agrietados, devolviéndoles su suavidad natural.</p>
+                    <span class="producto-precio">$14.500</span>
                     
-                    <!-- Botón Inicial de Comprar -->
                     <button class="btn-comprar">Comprar</button>
 
-                    <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
                     <div class="selector-cantidad-container" style="display: none;">
                         <div class="controles-cantidad">
                             <button type="button" class="btn-restar">-</button>
@@ -61,17 +58,57 @@
             </div>
 
             <!-- Producto 2 -->
-            <div class="producto-card" data-id="2" data-nombre="Nombre Producto" data-precio="22000">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto2.jpeg');"></div>
+            <div class="producto-card" data-id="2" data-nombre="Máscara Labial Nocturna de Hidratación Intensiva" data-precio="18900">
+                <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Maquillaje/Máscara_Labial_Nocturna.jfif');"></div>
                 <div class="producto-info">
-                    <h3>Nombre Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$22.000</span>
+                    <h3>Máscara Labial Nocturna</h3>
+                    <p>Tratamiento intensivo con vitamina E y aceites naturales que actúa durante la noche para unos labios renovados al despertar.</p>
+                    <span class="producto-precio">$18.900</span>
                     
-                    <!-- Botón Inicial de Comprar -->
                     <button class="btn-comprar">Comprar</button>
 
-                    <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                    <div class="selector-cantidad-container" style="display: none;">
+                        <div class="controles-cantidad">
+                            <button type="button" class="btn-restar">-</button>
+                            <span class="cantidad-num">1</span>
+                            <button type="button" class="btn-sumar">+</button>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="producto-card" data-id="3" data-nombre="Bálsamo Labial con Color y Ácido Hialurónico" data-precio="16200">
+                <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Maquillaje/Bálsamo_Ácido_Hialurónico.jfif');"></div>
+                <div class="producto-info">
+                    <h3>Bálsamo con Ácido Hialurónico</h3>
+                    <p>Aporta volumen y un tono sutil mientras hidrata en profundidad gracias a su fórmula enriquecida con ácido hialurónico.</p>
+                    <span class="producto-precio">$16.200</span>
+                    
+                    <button class="btn-comprar">Comprar</button>
+
+                    <div class="selector-cantidad-container" style="display: none;">
+                        <div class="controles-cantidad">
+                            <button type="button" class="btn-restar">-</button>
+                            <span class="cantidad-num">1</span>
+                            <button type="button" class="btn-sumar">+</button>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="producto-card" data-id="4" data-nombre="Exfoliante y Bálsamo 2 en 1 de Coco" data-precio="13500">
+                <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Maquillaje/Exfoliante_Bálsamo_Coco.jfif');"></div>
+                <div class="producto-info">
+                    <h3>Exfoliante y Bálsamo de Coco</h3>
+                    <p>Elimina las células muertas con cristales de azúcar y deja los labios hidratados con aceite de coco orgánico.</p>
+                    <span class="producto-precio">$13.500</span>
+                    
+                    <button class="btn-comprar">Comprar</button>
+
                     <div class="selector-cantidad-container" style="display: none;">
                         <div class="controles-cantidad">
                             <button type="button" class="btn-restar">-</button>
@@ -83,6 +120,7 @@
                 </div>
             </div>
         </section>
+    
 
         <footer>
             <div class="footer-columna">
@@ -105,24 +143,5 @@
         </footer>
     </div>
     <script src="../../script.js"></script>
-
-    <!-- Panel Deslizante del Carrito -->
-<div id="carrito-drawer" class="carrito-drawer">
-    <div class="carrito-header">
-        <h3>Tu Carrito</h3>
-        <button id="cerrar-carrito" class="btn-cerrar-carrito">&times;</button>
-    </div>
-    <div id="carrito-items" class="carrito-items">
-        <!-- Los productos se cargan dinámicamente con JavaScript -->
-    </div>
-    <div class="carrito-footer">
-        <div class="carrito-total">
-            <span>Total:</span>
-            <span id="carrito-precio-total">$0</span>
-        </div>
-        <button id="btn-ir-pagar" class="btn-primario" style="width: 100%;">FINALIZAR COMPRA</button>
-    </div>
-</div>
-<div id="carrito-overlay" class="carrito-overlay"></div>
 </body>
 </html>

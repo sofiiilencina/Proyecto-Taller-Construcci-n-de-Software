@@ -20,38 +20,115 @@
             <a href="../../Maquillaje.html">Maquillaje</a>
             <a href="../../Depilacion.html">Depilación</a>
             <a href="../../Venta.html" class="activo">Venta</a>
+            <a href="#" class="abrir-carrito-trigger">Mi Carrito 🛒</a>
         </div>
     </nav>
 
     <div id="contenedor_principal">
+        <!-- Botón para regresar a la página anterior -->
+        <div style="margin-bottom: 20px;">
+            <a href="../../Maquillaje_venta.html" class="btn-secundario" style="text-decoration: none; display: inline-block; text-align: center; line-height: normal;">← Volver</a>
+        </div>
+
         <div class="hero-servicio">
             <h1>Limpiadores de brochas</h1>
-            <p class="hero-tagline">Descripción breve de los productos disponibles</p>
+            <p class="hero-tagline">Higiene profunda, secado rápido y cuidado para mantener tus herramientas impecables</p>
         </div>
 
         <section class="catalogo-productos">
             <!-- Producto 1 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto1.jpeg');"></div>
+            <div class="producto-card" data-id="1" data-nombre="Spray Limpiador Instantáneo de Brochas" data-precio="13800">
+                <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Maquillaje/Spray_Limpiador_Instantáneo_Brochas.jfif');"></div>
                 <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$15.000</span>
+                    <h3>Spray Limpiador Instantáneo</h3>
+                    <p>Fórmula de secado rápido sin enjuague que desinfecta y elimina restos de pigmento en segundos entre aplicaciones.</p>
+                    <span class="producto-precio">$13.800</span>
+                    
+                    <!-- Botón Inicial de Comprar -->
                     <button class="btn-comprar">Comprar</button>
+
+                    <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                    <div class="selector-cantidad-container" style="display: none;">
+                        <div class="controles-cantidad">
+                            <button type="button" class="btn-restar">-</button>
+                            <span class="cantidad-num">1</span>
+                            <button type="button" class="btn-sumar">+</button>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al carrito</button>
+                    </div>
                 </div>
             </div>
 
             <!-- Producto 2 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto2.jpeg');"></div>
+            <div class="producto-card" data-id="2" data-nombre="Jabón Sólido Limpiador con Alfombrilla" data-precio="15400">
+                <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Maquillaje/Jabón_Sólido_Alfombrilla_Brochas.jfif');"></div>
                 <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$22.000</span>
+                    <h3>Jabón Sólido con Alfombrilla</h3>
+                    <p>Limpiador enriquecido con aceite de coco que disuelve residuos grasos sin dañar las cerdas naturales o sintéticas.</p>
+                    <span class="producto-precio">$15.400</span>
+                    
+                    <!-- Botón Inicial de Comprar -->
                     <button class="btn-comprar">Comprar</button>
+
+                    <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                    <div class="selector-cantidad-container" style="display: none;">
+                        <div class="controles-cantidad">
+                            <button type="button" class="btn-restar">-</button>
+                            <span class="cantidad-num">1</span>
+                            <button type="button" class="btn-sumar">+</button>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="producto-card" data-id="3" data-nombre="Pad de Silicona Texturizado para Lavado" data-precio="8900">
+                <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Maquillaje/Pad_Silicona_Texturizado_Brochas.jfif');"></div>
+                <div class="producto-info">
+                    <h3>Pad de Silicona Texturizado</h3>
+                    <p>Superficie con distintos relieves y ventosas traseras que facilita una limpieza profunda sin deformar las brochas.</p>
+                    <span class="producto-precio">$8.900</span>
+                    
+                    <!-- Botón Inicial de Comprar -->
+                    <button class="btn-comprar">Comprar</button>
+
+                    <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                    <div class="selector-cantidad-container" style="display: none;">
+                        <div class="controles-cantidad">
+                            <button type="button" class="btn-restar">-</button>
+                            <span class="cantidad-num">1</span>
+                            <button type="button" class="btn-sumar">+</button>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="producto-card" data-id="4" data-nombre="Shampoo Líquido Purificante para Brochas y Esponjas" data-precio="12200">
+                <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Maquillaje/Shampoo_Líquido_Purificante_Brochas.jfif');"></div>
+                <div class="producto-info">
+                    <h3>Shampoo Líquido Purificante</h3>
+                    <p>Fórmula suave libre de sulfatos ideal para lavar en profundidad esponjas difuminadoras y brochas de uso diario.</p>
+                    <span class="producto-precio">$12.200</span>
+                    
+                    <!-- Botón Inicial de Comprar -->
+                    <button class="btn-comprar">Comprar</button>
+
+                    <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                    <div class="selector-cantidad-container" style="display: none;">
+                        <div class="controles-cantidad">
+                            <button type="button" class="btn-restar">-</button>
+                            <span class="cantidad-num">1</span>
+                            <button type="button" class="btn-sumar">+</button>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al carrito</button>
+                    </div>
                 </div>
             </div>
         </section>
+
 
         <footer>
             <div class="footer-columna">
@@ -73,6 +150,6 @@
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="../../script.js"></script>
 </body>
 </html>

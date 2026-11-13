@@ -20,38 +20,117 @@
             <a href="../../Maquillaje.html">Maquillaje</a>
             <a href="../../Depilacion.html">Depilación</a>
             <a href="../../Venta.html" class="activo">Venta</a>
+            <a href="#" class="abrir-carrito-trigger">Mi Carrito 🛒</a>
         </div>
     </nav>
 
     <div id="contenedor_principal">
-        <div class="hero-servicio">
-            <h1>Sombras y paletas</h1>
-            <p class="hero-tagline">Descripción breve de los productos disponibles</p>
+    <!-- Botón para regresar a la página anterior -->
+    <div style="margin-bottom: 20px;">
+        <a href="../../Maquillaje_venta.html" class="btn-secundario" style="text-decoration: none; display: inline-block; text-align: center; line-height: normal;">← Volver</a>
+    </div>
+
+    <div class="hero-servicio">
+        <h1>Sombras y paletas</h1>
+        <p class="hero-tagline">Descubrí sombras y paletas para crear looks naturales, intensos y llenos de color</p>
+    </div>
+
+    <section class="catalogo-productos">
+
+        <!-- Producto 1 -->
+        <div class="producto-card" data-id="1" data-nombre="Maybelline The Nudes Paleta de Sombras" data-precio="28500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Maquillaje/Maybelline_TheNudes_Paleta_Sombras.jfif');"></div>
+            <div class="producto-info">
+                <h3>Maybelline The Nudes Paleta de Sombras</h3>
+                <p>Paleta de 12 tonos neutros que combina colores claros, marrones y oscuros. Ideal para crear maquillajes naturales de día o looks ahumados para la noche.</p>
+                <span class="producto-precio">$28.500</span>
+
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
         </div>
 
-        <section class="catalogo-productos">
-            <!-- Producto 1 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto1.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$15.000</span>
-                    <button class="btn-comprar">Comprar</button>
-                </div>
-            </div>
+        <!-- Producto 2 -->
+        <div class="producto-card" data-id="2" data-nombre="Revolution Reloaded Palette Velvet Rose" data-precio="22500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Maquillaje/Revolution_Reloaded_Palette_Velvet_Rose.jfif');"></div>
+            <div class="producto-info">
+                <h3>Revolution Reloaded Palette Velvet Rose</h3>
+                <p>Paleta de sombras con tonos rosados, malvas y marrones, con acabados mate y brillantes. Perfecta para lograr maquillajes románticos, suaves o más llamativos.</p>
+                <span class="producto-precio">$22.500</span>
 
-            <!-- Producto 2 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto2.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$22.000</span>
-                    <button class="btn-comprar">Comprar</button>
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="producto-card" data-id="3" data-nombre="NYX Ultimate Shadow Palette Warm Neutrals" data-precio="34500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Maquillaje/NYX_Ultimate_Shadow_Palette_Warm_Neutrals.jfif');"></div>
+            <div class="producto-info">
+                <h3>NYX Ultimate Shadow Palette Warm Neutrals</h3>
+                <p>Paleta de sombras en tonos cálidos y neutros, con diferentes intensidades y texturas. Permite combinar colores para definir la mirada y conseguir acabados profesionales.</p>
+                <span class="producto-precio">$34.500</span>
+
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="producto-card" data-id="4" data-nombre="Urban Decay Naked3 Eyeshadow Palette" data-precio="72000">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Maquillaje/Urban_Decay_Naked_Eyeshadow_Palette.jfif');"></div>
+            <div class="producto-info">
+                <h3>Urban Decay Naked3 Eyeshadow Palette</h3>
+                <p>Paleta de sombras con tonos rosados, nude y cobrizos, en acabados mate, satinados y metálicos. Su variedad de colores permite crear desde looks delicados hasta maquillajes sofisticados.</p>
+                <span class="producto-precio">$72.000</span>
+
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
 
         <footer>
             <div class="footer-columna">
@@ -73,6 +152,6 @@
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="../../script.js"></script>
 </body>
 </html>

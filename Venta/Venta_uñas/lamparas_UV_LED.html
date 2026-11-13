@@ -20,38 +20,115 @@
             <a href="../../Maquillaje.html">Maquillaje</a>
             <a href="../../Depilacion.html">Depilación</a>
             <a href="../../Venta.html" class="activo">Venta</a>
+            <a href="#" class="abrir-carrito-trigger">Mi Carrito 🛒</a>
         </div>
     </nav>
 
     <div id="contenedor_principal">
-        <div class="hero-servicio">
-            <h1>Lámparas UV / LED</h1>
-            <p class="hero-tagline">Descripción breve de los productos disponibles</p>
+    <!-- Botón para regresar a la página anterior -->
+    <div style="margin-bottom: 20px;">
+        <a href="../../Uñas_venta.html" class="btn-secundario" style="text-decoration: none; display: inline-block; text-align: center; line-height: normal;">← Volver</a>
+    </div>
+
+    <div class="hero-servicio">
+        <h1>Lámparas UV / LED</h1>
+        <p class="hero-tagline">Lámparas para secar y curar esmaltes semipermanentes, geles y productos de construcción de uñas.</p>
+    </div>
+
+    <section class="catalogo-productos">
+        <!-- Producto 1 -->
+        <div class="producto-card" data-id="1" data-nombre="Lámpara SUN X5 Max UV/LED" data-precio="35000">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/Lámpara_SUN_X5_Max_UVLED.jfif');"></div>
+            <div class="producto-info">
+                <h3>Lámpara SUN X5 Max UV/LED</h3>
+                <p>Lámpara para manicura con tecnología UV/LED, diseñada para curar esmaltes semipermanentes y geles. Cuenta con temporizador para facilitar el trabajo de manicura.</p>
+                <span class="producto-precio">$35.000</span>
+
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
         </div>
 
-        <section class="catalogo-productos">
-            <!-- Producto 1 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto1.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$15.000</span>
-                    <button class="btn-comprar">Comprar</button>
-                </div>
-            </div>
+        <!-- Producto 2 -->
+        <div class="producto-card" data-id="2" data-nombre="Lámpara SUN 5 UV/LED" data-precio="28000">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/Lámpara_SUN_5_UVLED.jfif');"></div>
+            <div class="producto-info">
+                <h3>Lámpara SUN 5 UV/LED</h3>
+                <p>Lámpara de secado para uñas con sensores automáticos y diferentes opciones de temporizador, ideal para aplicar esmaltes semipermanentes y realizar trabajos de nail art.</p>
+                <span class="producto-precio">$28.000</span>
 
-            <!-- Producto 2 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto2.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$22.000</span>
-                    <button class="btn-comprar">Comprar</button>
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="producto-card" data-id="3" data-nombre="Lámpara MelodySusie UV/LED" data-precio="52000">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/Lámpara_MelodySusie_UVLED.jfif');"></div>
+            <div class="producto-info">
+                <h3>Lámpara MelodySusie UV/LED</h3>
+                <p>Lámpara de manicura para uso profesional y doméstico, diseñada para curar geles y esmaltes compatibles. Su temporizador permite controlar el tiempo de exposición durante el servicio.</p>
+                <span class="producto-precio">$52.000</span>
+
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="producto-card" data-id="4" data-nombre="Lámpara SUN Mini UV/LED" data-precio="18000">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/Lámpara_SUN_Mini_UVLED.jfif');"></div>
+            <div class="producto-info">
+                <h3>Lámpara SUN Mini UV/LED</h3>
+                <p>Lámpara compacta y fácil de transportar, útil para realizar retoques y curar pequeñas aplicaciones de gel compatibles. Su tamaño reducido la hace práctica para llevar en el bolso de manicura.</p>
+                <span class="producto-precio">$18.000</span>
+
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
         <footer>
             <div class="footer-columna">
@@ -73,6 +150,6 @@
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="../../script.js"></script>
 </body>
 </html>

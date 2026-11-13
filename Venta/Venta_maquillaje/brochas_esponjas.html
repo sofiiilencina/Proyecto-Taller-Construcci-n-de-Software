@@ -20,38 +20,115 @@
             <a href="../../Maquillaje.html">Maquillaje</a>
             <a href="../../Depilacion.html">Depilación</a>
             <a href="../../Venta.html" class="activo">Venta</a>
+            <a href="#" class="abrir-carrito-trigger">Mi Carrito 🛒</a>
         </div>
     </nav>
 
     <div id="contenedor_principal">
+        <!-- Botón para regresar a la página anterior -->
+        <div style="margin-bottom: 20px;">
+            <a href="../../Maquillaje_venta.html" class="btn-secundario" style="text-decoration: none; display: inline-block; text-align: center; line-height: normal;">← Volver</a>
+        </div>
+
         <div class="hero-servicio">
             <h1>Brochas y esponjas</h1>
-            <p class="hero-tagline">Descripción breve de los productos disponibles</p>
+            <p class="hero-tagline">Herramientas esenciales para una aplicación precisa, uniforme y con acabado profesional</p>
         </div>
 
         <section class="catalogo-productos">
             <!-- Producto 1 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto1.jpeg');"></div>
+            <div class="producto-card" data-id="1" data-nombre="Set de 10 Brochas Profesionales" data-precio="28500">
+                <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Maquillaje/Set_10_Brochas_Profesionales.jfif');"></div>
                 <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$15.000</span>
+                    <h3>Set de 10 Brochas Profesionales</h3>
+                    <p>Cerdas sintéticas ultra suaves de alta densidad para aplicar base, polvo, rubor y sombras sin dejar marcas.</p>
+                    <span class="producto-precio">$28.500</span>
+                    
+                    <!-- Botón Inicial de Comprar -->
                     <button class="btn-comprar">Comprar</button>
+
+                    <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                    <div class="selector-cantidad-container" style="display: none;">
+                        <div class="controles-cantidad">
+                            <button type="button" class="btn-restar">-</button>
+                            <span class="cantidad-num">1</span>
+                            <button type="button" class="btn-sumar">+</button>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al carrito</button>
+                    </div>
                 </div>
             </div>
 
             <!-- Producto 2 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto2.jpeg');"></div>
+            <div class="producto-card" data-id="2" data-nombre="Esponja Difuminadora Gota Libre de Látex" data-precio="9800">
+                <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Maquillaje/Esponja_Difuminadora_Tipo_Gota.jfif');"></div>
                 <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$22.000</span>
+                    <h3>Esponja Difuminadora Tipo Gota</h3>
+                    <p>Material suave que duplica su tamaño al humedecerse, ideal para integrar bases y correctores con acabado natural.</p>
+                    <span class="producto-precio">$9.800</span>
+                    
+                    <!-- Botón Inicial de Comprar -->
                     <button class="btn-comprar">Comprar</button>
+
+                    <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                    <div class="selector-cantidad-container" style="display: none;">
+                        <div class="controles-cantidad">
+                            <button type="button" class="btn-restar">-</button>
+                            <span class="cantidad-num">1</span>
+                            <button type="button" class="btn-sumar">+</button>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="producto-card" data-id="3" data-nombre="Brocha Kabuki Plana para Base" data-precio="13200">
+                <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Maquillaje/Brocha_Plana_Base.jfif');"></div>
+                <div class="producto-info">
+                    <h3>Brocha Kabuki Plana para Base</h3>
+                    <p>Diseño compacto y firme que permite distribuir productos líquidos o en crema logrando máxima cobertura.</p>
+                    <span class="producto-precio">$13.200</span>
+                    
+                    <!-- Botón Inicial de Comprar -->
+                    <button class="btn-comprar">Comprar</button>
+
+                    <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                    <div class="selector-cantidad-container" style="display: none;">
+                        <div class="controles-cantidad">
+                            <button type="button" class="btn-restar">-</button>
+                            <span class="cantidad-num">1</span>
+                            <button type="button" class="btn-sumar">+</button>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="producto-card" data-id="4" data-nombre="Pack de 2 Cisnes de Terciopelo para Polvo" data-precio="8500">
+                <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Maquillaje/Pack_2_Cisnes_Terciopelo.jfif');"></div>
+                <div class="producto-info">
+                    <h3>Pack de 2 Cisnes de Terciopelo</h3>
+                    <p>Borlas triangulares suaves diseñadas para sellar el contorno de ojos y la zona T con polvos volátiles o compactos.</p>
+                    <span class="producto-precio">$8.500</span>
+                    
+                    <!-- Botón Inicial de Comprar -->
+                    <button class="btn-comprar">Comprar</button>
+
+                    <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                    <div class="selector-cantidad-container" style="display: none;">
+                        <div class="controles-cantidad">
+                            <button type="button" class="btn-restar">-</button>
+                            <span class="cantidad-num">1</span>
+                            <button type="button" class="btn-sumar">+</button>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al carrito</button>
+                    </div>
                 </div>
             </div>
         </section>
+
 
         <footer>
             <div class="footer-columna">
@@ -73,6 +150,6 @@
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="../../script.js"></script>
 </body>
 </html>

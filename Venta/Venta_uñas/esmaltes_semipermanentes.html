@@ -20,38 +20,117 @@
             <a href="../../Maquillaje.html">Maquillaje</a>
             <a href="../../Depilacion.html">Depilación</a>
             <a href="../../Venta.html" class="activo">Venta</a>
+            <a href="#" class="abrir-carrito-trigger">Mi Carrito 🛒</a>
         </div>
     </nav>
 
     <div id="contenedor_principal">
-        <div class="hero-servicio">
-            <h1>Esmaltes semipermanentes</h1>
-            <p class="hero-tagline">Descripción breve de los productos disponibles</p>
+    <!-- Botón para regresar a la página anterior -->
+    <div style="margin-bottom: 20px;">
+        <a href="../../Uñas_venta.html" class="btn-secundario" style="text-decoration: none; display: inline-block; text-align: center; line-height: normal;">← Volver</a>
+    </div>
+
+    <div class="hero-servicio">
+        <h1>Esmaltes semipermanentes</h1>
+        <p class="hero-tagline">Colores vibrantes, brillo intenso y una manicura duradera para lucir uñas perfectas</p>
+    </div>
+
+    <section class="catalogo-productos">
+
+        <!-- Producto 1 -->
+        <div class="producto-card" data-id="1" data-nombre="OPI GelColor Big Apple Red" data-precio="24500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/OPI_GelColor_Red.jfif');"></div>
+            <div class="producto-info">
+                <h3>OPI GelColor Big Apple Red</h3>
+                <p>Esmalte semipermanente de color rojo intenso, ideal para una manicura clásica y elegante. Ofrece un acabado brillante y requiere curado con lámpara compatible.</p>
+                <span class="producto-precio">$24.500</span>
+
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
         </div>
 
-        <section class="catalogo-productos">
-            <!-- Producto 1 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto1.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$15.000</span>
-                    <button class="btn-comprar">Comprar</button>
-                </div>
-            </div>
+        <!-- Producto 2 -->
+        <div class="producto-card" data-id="2" data-nombre="Gelish Forever Beauty" data-precio="22000">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/Gelish_Soak-Off_Gel_Polish2.jfif');"></div>
+            <div class="producto-info">
+                <h3>Gelish Soak-Off Gel Polish</h3>
+                <p>Esmalte semipermanente profesional disponible en distintos tonos. Su fórmula permite conseguir una cobertura uniforme y un acabado brillante cuando se aplica y cura según las instrucciones del fabricante.</p>
+                <span class="producto-precio">$22.000</span>
 
-            <!-- Producto 2 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto2.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$22.000</span>
-                    <button class="btn-comprar">Comprar</button>
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="producto-card" data-id="3" data-nombre="CND Shellac Wildfire" data-precio="26500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/CND_Shellac_Wildfire.jfif');"></div>
+            <div class="producto-info">
+                <h3>CND Shellac Wildfire</h3>
+                <p>Esmalte de larga duración en un tono rojo vibrante. Está diseñado para brindar color intenso y brillo, y se utiliza con el sistema de aplicación y curado recomendado por CND.</p>
+                <span class="producto-precio">$26.500</span>
+
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="producto-card" data-id="4" data-nombre="Semilac UV Hybrid Nail Polish" data-precio="18500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/Semilac_UV_Hybrid_Nail_Polish.jfif');"></div>
+            <div class="producto-info">
+                <h3>Semilac UV Hybrid Nail Polish</h3>
+                <p>Esmalte híbrido disponible en una amplia gama de colores, desde tonos nude hasta opciones intensas. Permite conseguir una manicura brillante y resistente mediante el curado con una lámpara compatible.</p>
+                <span class="producto-precio">$18.500</span>
+
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
 
         <footer>
             <div class="footer-columna">
@@ -73,6 +152,6 @@
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="../../script.js"></script>
 </body>
 </html>

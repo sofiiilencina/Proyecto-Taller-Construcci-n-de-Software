@@ -20,38 +20,107 @@
             <a href="../../Maquillaje.html">Maquillaje</a>
             <a href="../../Depilacion.html">Depilación</a>
             <a href="../../Venta.html" class="activo">Venta</a>
+            <a href="#" class="abrir-carrito-trigger">Mi Carrito 🛒</a>
         </div>
     </nav>
 
     <div id="contenedor_principal">
-        <div class="hero-servicio">
-            <h1>Protectores térmicos</h1>
-            <p class="hero-tagline">Descripción breve de los productos disponibles</p>
+    <!-- Botón para regresar a la página anterior -->
+    <div style="margin-bottom: 20px;">
+        <a href="../../Capilar_venta.html" class="btn-secundario" style="text-decoration: none; display: inline-block; text-align: center; line-height: normal;">← Volver</a>
+    </div>
+
+    <div class="hero-servicio">
+        <h1>Protectores térmicos</h1>
+        <p class="hero-tagline">Productos que ayudan a proteger el cabello del calor de planchitas, secadores y bucleadoras.</p>
+    </div>
+
+    <section class="catalogo-productos">
+        <!-- Producto 1 -->
+        <div class="producto-card" data-id="1" data-nombre="TRESemmé Protector Térmico Heat Defence" data-precio="12500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/TRESemmé_Protector_Térmico_Heat_Defence.jfif');"></div>
+            <div class="producto-info">
+                <h3>TRESemmé Protector Térmico Heat Defence</h3>
+                <p>Spray protector para utilizar antes de peinar con herramientas de calor. Ayuda a reducir los daños causados por el calor y facilita el peinado. Presentación aproximada de 200 ml.</p>
+                <span class="producto-precio">$12.500</span>
+
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
         </div>
 
-        <section class="catalogo-productos">
-            <!-- Producto 1 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto1.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$15.000</span>
-                    <button class="btn-comprar">Comprar</button>
-                </div>
-            </div>
+        <!-- Producto 2 -->
+        <div class="producto-card" data-id="2" data-nombre="L'Oréal Paris Elvive Dream Long Protector Térmico" data-precio="14500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Paris_Elvive_Dream_Long_Protector_Térmico.jfif');"></div>
+            <div class="producto-info">
+                <h3>L'Oréal Paris Elvive Dream Long Protector Térmico</h3>
+                <p>Crema sin enjuague para cabello largo que ayuda a protegerlo durante el peinado con calor, controlar el frizz y mantener las puntas con una apariencia más suave.</p>
+                <span class="producto-precio">$14.500</span>
 
-            <!-- Producto 2 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto2.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$22.000</span>
-                    <button class="btn-comprar">Comprar</button>
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="producto-card" data-id="3" data-nombre="Protector Térmico Profesional con Keratina" data-precio="11000">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Protector_Térmico_Profesional_Keratina.jfif');"></div>
+            <div class="producto-info">
+                <h3>Protector Térmico Profesional con Keratina</h3>
+                <p>Spray capilar con keratina para aplicar antes del uso de herramientas térmicas. Ayuda a mantener el cabello manejable, suave y con menos frizz. Presentación aproximada de 250 ml.</p>
+                <span class="producto-precio">$11.000</span>
+
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="producto-card" data-id="4" data-nombre="Protector Térmico con Aceite de Argán" data-precio="13500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Protector_Térmico_Argán.jfif');"></div>
+            <div class="producto-info">
+                <h3>Protector Térmico con Aceite de Argán</h3>
+                <p>Producto capilar con aceite de argán que ayuda a suavizar el cabello y controlar el frizz antes del secado o alisado. Ideal para complementar la rutina de peinado.</p>
+                <span class="producto-precio">$13.500</span>
+
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
         <footer>
             <div class="footer-columna">
@@ -73,6 +142,6 @@
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="../../script.js"></script>
 </body>
 </html>

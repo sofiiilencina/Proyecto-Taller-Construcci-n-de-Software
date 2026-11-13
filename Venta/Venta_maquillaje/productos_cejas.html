@@ -20,38 +20,115 @@
             <a href="../../Maquillaje.html">Maquillaje</a>
             <a href="../../Depilacion.html">Depilación</a>
             <a href="../../Venta.html" class="activo">Venta</a>
+            <a href="#" class="abrir-carrito-trigger">Mi Carrito 🛒</a>
         </div>
     </nav>
 
     <div id="contenedor_principal">
+        <!-- Botón para regresar a la página anterior -->
+        <div style="margin-bottom: 20px;">
+            <a href="../../Maquillaje_venta.html" class="btn-secundario" style="text-decoration: none; display: inline-block; text-align: center; line-height: normal;">← Volver</a>
+        </div>
+
         <div class="hero-servicio">
             <h1>Productos para cejas</h1>
-            <p class="hero-tagline">Descripción breve de los productos disponibles</p>
+            <p class="hero-tagline">Definición, relleno y fijación perfecta para enmarcar tu mirada</p>
         </div>
 
         <section class="catalogo-productos">
             <!-- Producto 1 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto1.jpeg');"></div>
+            <div class="producto-card" data-id="1" data-nombre="Pomada para Cejas con Pincel Delineador" data-precio="16200">
+                <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Maquillaje/Pomada_Cejas_Waterproof.jfif');"></div>
                 <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$15.000</span>
+                    <h3>Pomada para Cejas Waterproof</h3>
+                    <p>Fórmula cremosa de alta pigmentación y larga duración que define, rellena y esculpe las cejas con un trazo preciso.</p>
+                    <span class="producto-precio">$16.200</span>
+                    
+                    <!-- Botón Inicial de Comprar -->
                     <button class="btn-comprar">Comprar</button>
+
+                    <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                    <div class="selector-cantidad-container" style="display: none;">
+                        <div class="controles-cantidad">
+                            <button type="button" class="btn-restar">-</button>
+                            <span class="cantidad-num">1</span>
+                            <button type="button" class="btn-sumar">+</button>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al carrito</button>
+                    </div>
                 </div>
             </div>
 
             <!-- Producto 2 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto2.jpeg');"></div>
+            <div class="producto-card" data-id="2" data-nombre="Gel Fijador de Cejas Efecto Laminado" data-precio="13800">
+                <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Maquillaje/Gel_Fijador_Efecto_Laminado.jfif');"></div>
                 <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$22.000</span>
+                    <h3>Gel Fijador Efecto Laminado</h3>
+                    <p>Bálsamo fijador transparente que levanta y mantiene cada vello en su lugar todo el día simulando un laminado profesional.</p>
+                    <span class="producto-precio">$13.800</span>
+                    
+                    <!-- Botón Inicial de Comprar -->
                     <button class="btn-comprar">Comprar</button>
+
+                    <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                    <div class="selector-cantidad-container" style="display: none;">
+                        <div class="controles-cantidad">
+                            <button type="button" class="btn-restar">-</button>
+                            <span class="cantidad-num">1</span>
+                            <button type="button" class="btn-sumar">+</button>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="producto-card" data-id="3" data-nombre="Lápiz Retráctil Ultra Fino para Cejas" data-precio="12500">
+                <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Maquillaje/Lápiz_Retráctil_Ultra_Fino.jfif');"></div>
+                <div class="producto-info">
+                    <h3>Lápiz Retráctil Ultra Fino</h3>
+                    <p>Mina de alta precisión ideal para dibujar vellos pelo por pelo, logrando un acabado natural y definido.</p>
+                    <span class="producto-precio">$12.500</span>
+                    
+                    <!-- Botón Inicial de Comprar -->
+                    <button class="btn-comprar">Comprar</button>
+
+                    <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                    <div class="selector-cantidad-container" style="display: none;">
+                        <div class="controles-cantidad">
+                            <button type="button" class="btn-restar">-</button>
+                            <span class="cantidad-num">1</span>
+                            <button type="button" class="btn-sumar">+</button>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="producto-card" data-id="4" data-nombre="Sombra Compacta Dúo para Cejas con Pincel" data-precio="14900">
+                <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Maquillaje/Sombra_Dúo_Cejas.jfif');"></div>
+                <div class="producto-info">
+                    <h3>Sombra Dúo para Cejas</h3>
+                    <p>Paleta con dos tonos complementarios en polvo para rellenar de forma suave y difuminada con un aspecto natural.</p>
+                    <span class="producto-precio">$14.900</span>
+                    
+                    <!-- Botón Inicial de Comprar -->
+                    <button class="btn-comprar">Comprar</button>
+
+                    <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                    <div class="selector-cantidad-container" style="display: none;">
+                        <div class="controles-cantidad">
+                            <button type="button" class="btn-restar">-</button>
+                            <span class="cantidad-num">1</span>
+                            <button type="button" class="btn-sumar">+</button>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al carrito</button>
+                    </div>
                 </div>
             </div>
         </section>
+
 
         <footer>
             <div class="footer-columna">
@@ -73,6 +150,6 @@
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="../../script.js"></script>
 </body>
 </html>

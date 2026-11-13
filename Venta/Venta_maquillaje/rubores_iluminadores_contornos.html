@@ -20,35 +20,111 @@
             <a href="../../Maquillaje.html">Maquillaje</a>
             <a href="../../Depilacion.html">Depilación</a>
             <a href="../../Venta.html" class="activo">Venta</a>
+            <a href="#" class="abrir-carrito-trigger">Mi Carrito 🛒</a>
         </div>
     </nav>
 
     <div id="contenedor_principal">
+        <!-- Botón para regresar a la página anterior -->
+        <div style="margin-bottom: 20px;">
+            <a href="../../Maquillaje_venta.html" class="btn-secundario" style="text-decoration: none; display: inline-block; text-align: center; line-height: normal;">← Volver</a>
+        </div>
+
         <div class="hero-servicio">
             <h1>Rubores, iluminadores y contornos</h1>
-            <p class="hero-tagline">Descripción breve de los productos disponibles</p>
+            <p class="hero-tagline">Define, esculpe y aporta un toque de luz y color natural a tu rostro</p>
         </div>
 
         <section class="catalogo-productos">
             <!-- Producto 1 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto1.jpeg');"></div>
+            <div class="producto-card" data-id="1" data-nombre="Rubor en Polvo Compacto Tono Rosé" data-precio="16200">
+                <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Maquillaje/Rubor_Polvo_Compacto_Rosé.jfif');"></div>
                 <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$15.000</span>
+                    <h3>Rubor en Polvo Compacto Rosé</h3>
+                    <p>Aporta un rubor natural y saludable a las mejillas con textura sedosa de alta pigmentación y larga duración.</p>
+                    <span class="producto-precio">$16.200</span>
+                    
+                    <!-- Botón Inicial de Comprar -->
                     <button class="btn-comprar">Comprar</button>
+
+                    <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                    <div class="selector-cantidad-container" style="display: none;">
+                        <div class="controles-cantidad">
+                            <button type="button" class="btn-restar">-</button>
+                            <span class="cantidad-num">1</span>
+                            <button type="button" class="btn-sumar">+</button>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al carrito</button>
+                    </div>
                 </div>
             </div>
 
             <!-- Producto 2 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto2.jpeg');"></div>
+            <div class="producto-card" data-id="2" data-nombre="Iluminador Líquido Glow Strobe" data-precio="18900">
+                <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Maquillaje/Iluminador_Líquido_Glow_Strobe.jfif');"></div>
                 <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$22.000</span>
+                    <h3>Iluminador Líquido Glow Strobe</h3>
+                    <p>Brillo tridimensional de alto impacto que realza los puntos clave del rostro con un acabado luminoso y radiante.</p>
+                    <span class="producto-precio">$18.900</span>
+                    
+                    <!-- Botón Inicial de Comprar -->
                     <button class="btn-comprar">Comprar</button>
+
+                    <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                    <div class="selector-cantidad-container" style="display: none;">
+                        <div class="controles-cantidad">
+                            <button type="button" class="btn-restar">-</button>
+                            <span class="cantidad-num">1</span>
+                            <button type="button" class="btn-sumar">+</button>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="producto-card" data-id="3" data-nombre="Paleta de Contornos en Polvo Sculpt & Define" data-precio="23500">
+                <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Maquillaje/Paleta_Contornos.jfif');"></div>
+                <div class="producto-info">
+                    <h3>Paleta de Contornos Sculpt & Define</h3>
+                    <p>Incluye tonos oscuros para esculpir y claros para iluminar, permitiendo definir los rasgos faciales con precisión.</p>
+                    <span class="producto-precio">$23.500</span>
+                    
+                    <!-- Botón Inicial de Comprar -->
+                    <button class="btn-comprar">Comprar</button>
+
+                    <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                    <div class="selector-cantidad-container" style="display: none;">
+                        <div class="controles-cantidad">
+                            <button type="button" class="btn-restar">-</button>
+                            <span class="cantidad-num">1</span>
+                            <button type="button" class="btn-sumar">+</button>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="producto-card" data-id="4" data-nombre="Rubor en Crema Efecto Jugoso" data-precio="17400">
+                <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Maquillaje/Rubor_Crema.jfif');"></div>
+                <div class="producto-info">
+                    <h3>Rubor en Crema Efecto Jugoso</h3>
+                    <p>Fórmula fundente que se difumina fácilmente con los dedos o brocha, brindando un aspecto fresco y natural en la piel.</p>
+                    <span class="producto-precio">$17.400</span>
+                    
+                    <!-- Botón Inicial de Comprar -->
+                    <button class="btn-comprar">Comprar</button>
+
+                    <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                    <div class="selector-cantidad-container" style="display: none;">
+                        <div class="controles-cantidad">
+                            <button type="button" class="btn-restar">-</button>
+                            <span class="cantidad-num">1</span>
+                            <button type="button" class="btn-sumar">+</button>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al carrito</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -73,6 +149,6 @@
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="../../script.js"></script>
 </body>
 </html>

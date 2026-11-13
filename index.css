@@ -858,6 +858,8 @@ input[type="submit"]:hover {
     background-image: url('Imágenes/Boton_pelo.jpeg');
 }
 
+
+/* Imágenes barra de navegación venta insumos_uñas */
 #img_esmaltes_semipermanentes{
     background-image: url('Imágenes/Esmaltes_semipermanentes.jpeg');
 }
@@ -910,6 +912,136 @@ input[type="submit"]:hover {
     background-image: url('Imágenes/Aceite_cuticulas.jpeg');
 }
 
+#img_quitaesmaltes{
+    background-image: url('Imágenes/Removedor_esmalte.jpeg');
+}
+
+#img_polvos{
+    background-image: url('Imágenes/Polvos_efectos.jpeg');
+}
+
+#img_glitter_strass{
+    background-image: url('Imágenes/Glitter_Strass_Apliques.jpeg');
+}
+
+/* Imágenes barra de navegación venta maquillaje */
+#img_bases_correctores{
+    background-image: url('Imágenes/Bases_Correctores.jpeg');
+}
+
+#img_primers_fijadores{
+    background-image: url('Imágenes/Primers_Fijadores.jpeg');
+}
+
+#img_polvos_compactos{
+    background-image: url('Imágenes/Polvo_compacto.jpeg');
+}
+
+#img_rubores_iluminadores{
+    background-image: url('Imágenes/Rubores_Iluminadores_Contornos.jpeg');
+}
+
+#img_sombras{
+    background-image: url('Imágenes/Sombras_paletas.jpeg');
+}
+
+#img_delineadores{
+    background-image: url('Imágenes/Delineadores.jpeg');
+}
+
+#img_mascaras_pestanas{
+    background-image: url('Imágenes/Mascara_de_pestañas.jpeg');
+}
+
+#img_productos_cejas{
+    background-image: url('Imágenes/Productos_cejas.jpeg');
+}
+
+#img_labiales_glosses{
+    background-image: url('Imágenes/Labiales_Glosses.jpeg');
+}
+
+#img_delineadores_labios{
+    background-image: url('Imágenes/Delineadores_labios.jpeg');
+}
+
+#img_balsamos_hidratantes{
+    background-image: url('Imágenes/Bálsamos_hidratantes.jpeg');
+}
+
+#img_brochas_esponjas{
+    background-image: url('Imágenes/Brochas_esponjas.jpeg');
+}
+
+#img_desmaquillantes{
+    background-image: url('Imágenes/Desmaquillantes.jpeg');
+}
+
+#img_limpiadores_brochas{
+    background-image: url('Imágenes/Limpiadores_brochas.jpeg');
+}
+
+
+/* Imágenes barra de navegación venta capilar */
+#img_shampoos{
+    background-image: url('Imágenes/Shampoos.jpeg');
+}
+
+#img_acondicionadores{
+    background-image: url('Imágenes/Acondicionadores.jpeg');
+}
+
+#img_mascarillas{
+    background-image: url('Imágenes/Mascarillas.jpeg');
+}
+
+#img_ampollas{
+    background-image: url('Imágenes/Ampollas_nutricion_reparacion.jpeg');
+}
+
+#img_aceites_serums{
+    background-image: url('Imágenes/Aceite_puntas.jpeg');
+}
+
+#img_protectores_termicos{
+    background-image: url('Imágenes/Protectores_térmicos.jpeg');
+}
+
+#img_cremas_peinar{
+    background-image: url('Imágenes/Cremas_para_peinar.jpeg');
+}
+
+#img_tinturas{
+    background-image: url('Imágenes/Tinturas.jpeg');
+}
+
+#img_matizadores{
+    background-image: url('Imágenes/Matizadores.jpeg');
+}
+
+#img_decolorantes{
+    background-image: url('Imágenes/Decolorantes.jpeg');
+}
+
+#img_alisados{
+    background-image: url('Imágenes/Alisados.jpeg');
+}
+
+#img_secadores{
+    background-image: url('Imágenes/Secadores_pelo.jpeg');
+}
+
+#img_planchitas{
+    background-image: url('Imágenes/Planchitas_bucleadoras.jpeg');
+}
+
+#img_cepillos{
+    background-image: url('Imágenes/Cepillos.jpeg');
+}
+
+#img_accesorios_tintura{
+    background-image: url('Imágenes/Gorros_térmicos.jpeg');
+}
 
 .menu-toggle{
     display: none;
@@ -1177,11 +1309,11 @@ select:disabled {
 
 .producto-imagen {
     width: 100%;
-    height: 220px;
-    background-size: cover;
+    height: 250px;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #1a191a;
+    background-color: #ffffff;
     border-bottom: 2px solid rgb(137, 43, 226);
 }
 

@@ -20,38 +20,107 @@
             <a href="../../Maquillaje.html">Maquillaje</a>
             <a href="../../Depilacion.html">Depilación</a>
             <a href="../../Venta.html" class="activo">Venta</a>
+            <a href="#" class="abrir-carrito-trigger">Mi Carrito 🛒</a>
         </div>
     </nav>
 
     <div id="contenedor_principal">
-        <div class="hero-servicio">
-            <h1>Aceites y sérums para puntas</h1>
-            <p class="hero-tagline">Descripción breve de los productos disponibles</p>
+    <!-- Botón para regresar a la página anterior -->
+    <div style="margin-bottom: 20px;">
+        <a href="../../Capilar_venta.html" class="btn-secundario" style="text-decoration: none; display: inline-block; text-align: center; line-height: normal;">← Volver</a>
+    </div>
+
+    <div class="hero-servicio">
+        <h1>Aceites y sérums para puntas</h1>
+        <p class="hero-tagline">Nutrición, brillo y suavidad para cuidar las puntas del cabello y reducir su apariencia reseca.</p>
+    </div>
+
+    <section class="catalogo-productos">
+        <!-- Producto 1 -->
+        <div class="producto-card" data-id="1" data-nombre="L'Oréal Paris Elvive Óleo Extraordinario" data-precio="14500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Paris_Elvive_Óleo_Extraordinario_Aceite.jfif');"></div>
+            <div class="producto-info">
+                <h3>L'Oréal Paris Elvive Óleo Extraordinario</h3>
+                <p>Aceite capilar que ayuda a suavizar el cabello, aportar brillo y controlar el frizz. Ideal para mejorar el aspecto de las puntas secas.</p>
+                <span class="producto-precio">$14.500</span>
+
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
         </div>
 
-        <section class="catalogo-productos">
-            <!-- Producto 1 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto1.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$15.000</span>
-                    <button class="btn-comprar">Comprar</button>
-                </div>
-            </div>
+        <!-- Producto 2 -->
+        <div class="producto-card" data-id="2" data-nombre="Moroccanoil Treatment" data-precio="42000">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Moroccanoil_Treatment.jfif');"></div>
+            <div class="producto-info">
+                <h3>Moroccanoil Treatment</h3>
+                <p>Tratamiento capilar con aceite de argán que ayuda a desenredar, suavizar y dar brillo. Deja las puntas con una apariencia más cuidada.</p>
+                <span class="producto-precio">$42.000</span>
 
-            <!-- Producto 2 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto2.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$22.000</span>
-                    <button class="btn-comprar">Comprar</button>
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="producto-card" data-id="3" data-nombre="Garnier Fructis Sérum Adiós Daños" data-precio="12500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Garnier_Fructis_Sérum_Adiós_Daños.jfif');"></div>
+            <div class="producto-info">
+                <h3>Garnier Fructis Sérum Adiós Daños</h3>
+                <p>Sérum capilar pensado para mejorar la apariencia del cabello dañado y las puntas resecas. Ayuda a controlar el frizz y aporta suavidad.</p>
+                <span class="producto-precio">$12.500</span>
+
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="producto-card" data-id="4" data-nombre="Pantene Sérum Capilar Reparador" data-precio="11000">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Pantene_Sérum_Capilar_Reparador.jfif');"></div>
+            <div class="producto-info">
+                <h3>Pantene Sérum Capilar Reparador</h3>
+                <p>Sérum de uso capilar que ayuda a reducir el aspecto áspero de las puntas, facilita el peinado y aporta un acabado más brillante y suave.</p>
+                <span class="producto-precio">$11.000</span>
+
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
         <footer>
             <div class="footer-columna">
@@ -73,6 +142,6 @@
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="../../script.js"></script>
 </body>
 </html>

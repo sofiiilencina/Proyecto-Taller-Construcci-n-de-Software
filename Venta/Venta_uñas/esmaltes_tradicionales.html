@@ -20,38 +20,117 @@
             <a href="../../Maquillaje.html">Maquillaje</a>
             <a href="../../Depilacion.html">Depilación</a>
             <a href="../../Venta.html" class="activo">Venta</a>
+            <a href="#" class="abrir-carrito-trigger">Mi Carrito 🛒</a>
         </div>
     </nav>
 
     <div id="contenedor_principal">
-        <div class="hero-servicio">
-            <h1>Esmaltes tradicionales</h1>
-            <p class="hero-tagline">Descripción breve de los productos disponibles</p>
+    <!-- Botón para regresar a la página anterior -->
+    <div style="margin-bottom: 20px;">
+        <a href="../../Uñas_venta.html" class="btn-secundario" style="text-decoration: none; display: inline-block; text-align: center; line-height: normal;">← Volver</a>
+    </div>
+
+    <div class="hero-servicio">
+        <h1>Esmaltes tradicionales</h1>
+        <p class="hero-tagline">Descubrí colores clásicos y modernos para lucir una manicura brillante y llena de estilo</p>
+    </div>
+
+    <section class="catalogo-productos">
+
+        <!-- Producto 1 -->
+        <div class="producto-card" data-id="1" data-nombre="OPI Nail Lacquer Big Apple Red" data-precio="18500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/OPI_Nail_Lacquer_Big_Apple_Red.jfif');"></div>
+            <div class="producto-info">
+                <h3>OPI Nail Lacquer Big Apple Red</h3>
+                <p>Esmalte tradicional de color rojo intenso, ideal para una manicura clásica y elegante. Su fórmula brinda un acabado brillante y permite aplicar capas para lograr la intensidad deseada.</p>
+                <span class="producto-precio">$18.500</span>
+
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
         </div>
 
-        <section class="catalogo-productos">
-            <!-- Producto 1 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto1.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$15.000</span>
-                    <button class="btn-comprar">Comprar</button>
-                </div>
-            </div>
+        <!-- Producto 2 -->
+        <div class="producto-card" data-id="2" data-nombre="Essie Nail Polish Ballet Slippers" data-precio="16500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/Essie_Nail_Polish_Ballet_Slippers.jfif');"></div>
+            <div class="producto-info">
+                <h3>Essie Nail Polish Ballet Slippers</h3>
+                <p>Esmalte tradicional en un delicado tono rosa pálido, perfecto para conseguir una manicura natural y sofisticada. Ideal para el uso diario y para combinar con cualquier estilo.</p>
+                <span class="producto-precio">$16.500</span>
 
-            <!-- Producto 2 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto2.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$22.000</span>
-                    <button class="btn-comprar">Comprar</button>
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="producto-card" data-id="3" data-nombre="Maybelline New York Color Show Nail Polish" data-precio="8500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/Maybelline-New-York_Color_Show.jfif');"></div>
+            <div class="producto-info">
+                <h3>Maybelline New York Color Show Nail Polish</h3>
+                <p>Esmalte de uñas de la línea Color Show, reconocida por sus tonos variados y modernos. Una opción para agregar color a las uñas y crear manicuras sencillas y divertidas.</p>
+                <span class="producto-precio">$8.500</span>
+
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="producto-card" data-id="4" data-nombre="Sally Hansen Insta-Dri Nail Color" data-precio="12500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/Sally_Hansen_Insta-Dri_Nail_Color.jfif');"></div>
+            <div class="producto-info">
+                <h3>Sally Hansen Insta-Dri Nail Color</h3>
+                <p>Esmalte tradicional de secado rápido que ayuda a simplificar la manicura. Su pincel facilita la aplicación y permite conseguir un acabado de color brillante en poco tiempo.</p>
+                <span class="producto-precio">$12.500</span>
+
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
 
         <footer>
             <div class="footer-columna">
@@ -73,6 +152,6 @@
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="../../script.js"></script>
 </body>
 </html>

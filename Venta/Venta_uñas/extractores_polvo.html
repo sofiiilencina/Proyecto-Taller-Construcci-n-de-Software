@@ -20,38 +20,116 @@
             <a href="../../Maquillaje.html">Maquillaje</a>
             <a href="../../Depilacion.html">Depilación</a>
             <a href="../../Venta.html" class="activo">Venta</a>
+            <a href="#" class="abrir-carrito-trigger">Mi Carrito 🛒</a>
         </div>
     </nav>
 
     <div id="contenedor_principal">
-        <div class="hero-servicio">
-            <h1>Extractores de polvo</h1>
-            <p class="hero-tagline">Descripción breve de los productos disponibles</p>
+    <!-- Botón para regresar a la página anterior -->
+    <div style="margin-bottom: 20px;">
+        <a href="../../Uñas_venta.html" class="btn-secundario" style="text-decoration: none; display: inline-block; text-align: center; line-height: normal;">← Volver</a>
+    </div>
+
+    <div class="hero-servicio">
+        <h1>Extractores de polvo</h1>
+        <p class="hero-tagline">Equipos para mantener limpia el área de trabajo durante el limado y la construcción de uñas.</p>
+    </div>
+
+    <section class="catalogo-productos">
+        <!-- Producto 1 -->
+        <div class="producto-card" data-id="1" data-nombre="Extractor de polvo MelodySusie" data-precio="45000">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/Extractor_Polvo_MelodySusie.jfif');"></div>
+            <div class="producto-info">
+                <h3>Extractor de polvo MelodySusie</h3>
+                <p>Extractor eléctrico para manicura que ayuda a recoger el polvo generado al limar uñas naturales, esculpidas o de gel. Ideal para uso doméstico y profesional.</p>
+                <span class="producto-precio">$45.000</span>
+
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
         </div>
 
-        <section class="catalogo-productos">
-            <!-- Producto 1 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto1.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$15.000</span>
-                    <button class="btn-comprar">Comprar</button>
-                </div>
-            </div>
+        <!-- Producto 2 -->
+        <div class="producto-card" data-id="2" data-nombre="Extractor de polvo SUN X5 Max" data-precio="62000">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/Extractor_Polvo_SUN_X5_Max.jfif');"></div>
+            <div class="producto-info">
+                <h3>Extractor de polvo SUN X5 Max</h3>
+                <p>Equipo de aspiración para manicura con superficie de trabajo amplia. Ayuda a mantener la mesa más limpia durante el limado de uñas acrílicas, polygel y gel constructor.</p>
+                <span class="producto-precio">$62.000</span>
 
-            <!-- Producto 2 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto2.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$22.000</span>
-                    <button class="btn-comprar">Comprar</button>
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="producto-card" data-id="3" data-nombre="Extractor de polvo Nail Dust Collector 858-8" data-precio="38000">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/Extractor_Polvo_Nail_Dust_Collector_858-8.jfif');"></div>
+            <div class="producto-info">
+                <h3>Extractor de polvo Nail Dust Collector 858-8</h3>
+                <p>Extractor compacto con ventilador y bolsa recolectora. Es práctico para trabajos de manicura y pedicura, y permite reducir la acumulación de residuos sobre la mesa.</p>
+                <span class="producto-precio">$38.000</span>
+
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="producto-card" data-id="4" data-nombre="Extractor de polvo profesional con filtro" data-precio="85000">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/Extractor_Polvo_Profesional_Filtro.jfif');"></div>
+            <div class="producto-info">
+                <h3>Extractor de polvo profesional con filtro</h3>
+                <p>Equipo de aspiración para salones de uñas, diseñado para recoger partículas durante el limado. Su filtro ayuda a retener el polvo y facilita la limpieza del espacio de trabajo.</p>
+                <span class="producto-precio">$85.000</span>
+
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
 
         <footer>
             <div class="footer-columna">
@@ -73,6 +151,6 @@
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="../../script.js"></script>
 </body>
 </html>

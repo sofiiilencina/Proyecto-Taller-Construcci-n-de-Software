@@ -20,38 +20,107 @@
             <a href="../../Maquillaje.html">Maquillaje</a>
             <a href="../../Depilacion.html">Depilación</a>
             <a href="../../Venta.html" class="activo">Venta</a>
+            <a href="#" class="abrir-carrito-trigger">Mi Carrito 🛒</a>
         </div>
     </nav>
 
     <div id="contenedor_principal">
-        <div class="hero-servicio">
-            <h1>Planchitas y bucleadoras</h1>
-            <p class="hero-tagline">Descripción breve de los productos disponibles</p>
+    <!-- Botón para regresar a la página anterior -->
+    <div style="margin-bottom: 20px;">
+        <a href="../../Capilar_venta.html" class="btn-secundario" style="text-decoration: none; display: inline-block; text-align: center; line-height: normal;">← Volver</a>
+    </div>
+
+    <div class="hero-servicio">
+        <h1>Planchitas y bucleadoras</h1>
+        <p class="hero-tagline">Herramientas para alisar, ondular y crear diferentes peinados.</p>
+    </div>
+
+    <section class="catalogo-productos">
+        <!-- Producto 1 -->
+        <div class="producto-card" data-id="1" data-nombre="Planchita Remington Ceramic Slim" data-precio="35000">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Planchita_Remington_Ceramic_Slim.jfif');"></div>
+            <div class="producto-info">
+                <h3>Planchita Remington Ceramic Slim</h3>
+                <p>Planchita alisadora con placas cerámicas que ayudan a distribuir el calor de manera uniforme. Ideal para lograr un cabello más liso y suave.</p>
+                <span class="producto-precio">$35.000</span>
+
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
         </div>
 
-        <section class="catalogo-productos">
-            <!-- Producto 1 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto1.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$15.000</span>
-                    <button class="btn-comprar">Comprar</button>
-                </div>
-            </div>
+        <!-- Producto 2 -->
+        <div class="producto-card" data-id="2" data-nombre="Planchita Gama Elegance" data-precio="48000">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Planchita_Gama_Elegance.jfif');"></div>
+            <div class="producto-info">
+                <h3>Planchita Gama Elegance</h3>
+                <p>Herramienta de alisado con placas diseñadas para facilitar el deslizamiento sobre el cabello. Práctica para uso diario y para crear peinados prolijos.</p>
+                <span class="producto-precio">$48.000</span>
 
-            <!-- Producto 2 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto2.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$22.000</span>
-                    <button class="btn-comprar">Comprar</button>
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="producto-card" data-id="3" data-nombre="Bucleadora Remington Ceramic" data-precio="42000">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Bucleadora_Remington_Ceramic.jfif');"></div>
+            <div class="producto-info">
+                <h3>Bucleadora Remington Ceramic</h3>
+                <p>Bucleadora con recubrimiento cerámico para crear ondas y rulos definidos. Su diseño permite trabajar mechones de cabello para conseguir diferentes estilos.</p>
+                <span class="producto-precio">$42.000</span>
+
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="producto-card" data-id="4" data-nombre="Bucleadora Gama Tourmaline" data-precio="55000">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Bucleadora_Gama_Tourmaline.jfif');"></div>
+            <div class="producto-info">
+                <h3>Bucleadora Gama Tourmaline</h3>
+                <p>Herramienta para formar ondas suaves o rulos más marcados. Su recubrimiento depende del modelo específico y está diseñada para facilitar el peinado en casa o en peluquería.</p>
+                <span class="producto-precio">$55.000</span>
+
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
         <footer>
             <div class="footer-columna">
@@ -73,6 +142,6 @@
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="../../script.js"></script>
 </body>
 </html>

@@ -20,38 +20,107 @@
             <a href="../../Maquillaje.html">Maquillaje</a>
             <a href="../../Depilacion.html">Depilación</a>
             <a href="../../Venta.html" class="activo">Venta</a>
+            <a href="#" class="abrir-carrito-trigger">Mi Carrito 🛒</a>
         </div>
     </nav>
 
     <div id="contenedor_principal">
-        <div class="hero-servicio">
-            <h1>Tonalizadores y matizadores</h1>
-            <p class="hero-tagline">Descripción breve de los productos disponibles</p>
+    <!-- Botón para regresar a la página anterior -->
+    <div style="margin-bottom: 20px;">
+        <a href="../../Capilar_venta.html" class="btn-secundario" style="text-decoration: none; display: inline-block; text-align: center; line-height: normal;">← Volver</a>
+    </div>
+
+    <div class="hero-servicio">
+        <h1>Tonalizadores y matizadores</h1>
+        <p class="hero-tagline">Productos para neutralizar reflejos no deseados y mantener el color del cabello.</p>
+    </div>
+
+    <section class="catalogo-productos">
+        <!-- Producto 1 -->
+        <div class="producto-card" data-id="1" data-nombre="L'Oréal Paris Elvive Color Vive Violeta" data-precio="12500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Paris_Elvive_Color_Vive_Violeta.jfif');"></div>
+            <div class="producto-info">
+                <h3>L'Oréal Paris Elvive Color Vive Violeta</h3>
+                <p>Shampoo violeta para cabellos rubios, decolorados o con mechas. Ayuda a neutralizar los reflejos amarillentos y a mantener un tono más frío. Presentación aproximada de 200 ml.</p>
+                <span class="producto-precio">$12.500</span>
+
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
         </div>
 
-        <section class="catalogo-productos">
-            <!-- Producto 1 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto1.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$15.000</span>
-                    <button class="btn-comprar">Comprar</button>
-                </div>
-            </div>
+        <!-- Producto 2 -->
+        <div class="producto-card" data-id="2" data-nombre="Matizador Violeta Profesional" data-precio="18500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Matizador_Violeta_Profesional.jfif');"></div>
+            <div class="producto-info">
+                <h3>Matizador Violeta Profesional</h3>
+                <p>Tratamiento con pigmentos violetas diseñado para ayudar a reducir los tonos amarillos en cabellos rubios y platinados. Ideal para complementar el mantenimiento del color.</p>
+                <span class="producto-precio">$18.500</span>
 
-            <!-- Producto 2 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto2.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$22.000</span>
-                    <button class="btn-comprar">Comprar</button>
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="producto-card" data-id="3" data-nombre="Tonalizador Ceniza para Cabello" data-precio="16000">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Tonalizador_Ceniza_Cabello.jfif');"></div>
+            <div class="producto-info">
+                <h3>Tonalizador Ceniza para Cabello</h3>
+                <p>Producto tonalizador para ayudar a conseguir reflejos ceniza y disminuir la apariencia de tonos cálidos no deseados. Debe seleccionarse según la base y el color del cabello.</p>
+                <span class="producto-precio">$16.000</span>
+
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="producto-card" data-id="4" data-nombre="Máscara Matizadora para Cabellos Rubios" data-precio="14500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Máscara_Matizadora_Cabellos_Rubios.jfif');"></div>
+            <div class="producto-info">
+                <h3>Máscara Matizadora para Cabellos Rubios</h3>
+                <p>Máscara capilar con pigmentos matizadores que ayuda a mantener el tono rubio y aporta suavidad al cabello. Ideal para utilizar como parte de una rutina de cuidado del color.</p>
+                <span class="producto-precio">$14.500</span>
+
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
         <footer>
             <div class="footer-columna">
@@ -73,6 +142,6 @@
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="../../script.js"></script>
 </body>
 </html>

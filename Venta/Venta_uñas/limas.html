@@ -20,38 +20,115 @@
             <a href="../../Maquillaje.html">Maquillaje</a>
             <a href="../../Depilacion.html">Depilación</a>
             <a href="../../Venta.html" class="activo">Venta</a>
+            <a href="#" class="abrir-carrito-trigger">Mi Carrito 🛒</a>
         </div>
     </nav>
 
     <div id="contenedor_principal">
-        <div class="hero-servicio">
-            <h1>Limas y bloques pulidores</h1>
-            <p class="hero-tagline">Descripción breve de los productos disponibles</p>
+    <!-- Botón para regresar a la página anterior -->
+    <div style="margin-bottom: 20px;">
+        <a href="../../Uñas_venta.html" class="btn-secundario" style="text-decoration: none; display: inline-block; text-align: center; line-height: normal;">← Volver</a>
+    </div>
+
+    <div class="hero-servicio">
+        <h1>Limas y bloques pulidores</h1>
+        <p class="hero-tagline">Herramientas para dar forma, suavizar y preparar las uñas para una manicura prolija.</p>
+    </div>
+
+    <section class="catalogo-productos">
+        <!-- Producto 1 -->
+        <div class="producto-card" data-id="1" data-nombre="Lima profesional OPI 100/180" data-precio="4500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/Lima_OPI_100-180.jfif');"></div>
+            <div class="producto-info">
+                <h3>Lima profesional OPI 100/180</h3>
+                <p>Lima de doble gramaje para trabajar uñas esculpidas, rebajar producto y dar forma. Su combinación de abrasividades permite realizar distintos pasos de la manicura.</p>
+                <span class="producto-precio">$4.500</span>
+
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
         </div>
 
-        <section class="catalogo-productos">
-            <!-- Producto 1 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto1.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$15.000</span>
-                    <button class="btn-comprar">Comprar</button>
-                </div>
-            </div>
+        <!-- Producto 2 -->
+        <div class="producto-card" data-id="2" data-nombre="Lima acolchada Zebra 180/240" data-precio="3500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/Lima_Zebra_180-240.jfif');"></div>
+            <div class="producto-info">
+                <h3>Lima acolchada Zebra 180/240</h3>
+                <p>Lima flexible con dos niveles de abrasividad, ideal para suavizar bordes, perfeccionar la forma y preparar la superficie de las uñas antes del esmaltado.</p>
+                <span class="producto-precio">$3.500</span>
 
-            <!-- Producto 2 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto2.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$22.000</span>
-                    <button class="btn-comprar">Comprar</button>
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="producto-card" data-id="3" data-nombre="Bloque pulidor de cuatro caras" data-precio="2800">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/Bloque_Pulidor_4_Caras.jfif');"></div>
+            <div class="producto-info">
+                <h3>Bloque pulidor de cuatro caras</h3>
+                <p>Bloque pulidor con cuatro superficies para alisar pequeñas irregularidades, suavizar la uña y mejorar la preparación antes de aplicar esmalte o productos de construcción.</p>
+                <span class="producto-precio">$2.800</span>
+
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="producto-card" data-id="4" data-nombre="Lima de vidrio para uñas" data-precio="6000">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/Lima_Vidrio_Uñas.jfif');"></div>
+            <div class="producto-info">
+                <h3>Lima de vidrio para uñas</h3>
+                <p>Lima reutilizable diseñada para dar forma y suavizar los bordes de las uñas naturales. Es fácil de limpiar y permite realizar un limado delicado cuando se utiliza correctamente.</p>
+                <span class="producto-precio">$6.000</span>
+
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
         <footer>
             <div class="footer-columna">
@@ -73,6 +150,6 @@
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="../../script.js"></script>
 </body>
 </html>

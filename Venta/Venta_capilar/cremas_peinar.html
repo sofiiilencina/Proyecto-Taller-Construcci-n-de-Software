@@ -20,38 +20,107 @@
             <a href="../../Maquillaje.html">Maquillaje</a>
             <a href="../../Depilacion.html">Depilación</a>
             <a href="../../Venta.html" class="activo">Venta</a>
+            <a href="#" class="abrir-carrito-trigger">Mi Carrito 🛒</a>
         </div>
     </nav>
 
     <div id="contenedor_principal">
-        <div class="hero-servicio">
-            <h1>Cremas para peinar y activadores de rulos</h1>
-            <p class="hero-tagline">Descripción breve de los productos disponibles</p>
+    <!-- Botón para regresar a la página anterior -->
+    <div style="margin-bottom: 20px;">
+        <a href="../../Capilar_venta.html" class="btn-secundario" style="text-decoration: none; display: inline-block; text-align: center; line-height: normal;">← Volver</a>
+    </div>
+
+    <div class="hero-servicio">
+        <h1>Cremas para peinar y activadores de rulos</h1>
+        <p class="hero-tagline">Definición, hidratación y control del frizz para lucir rulos y ondas suaves y definidos.</p>
+    </div>
+
+    <section class="catalogo-productos">
+        <!-- Producto 1 -->
+        <div class="producto-card" data-id="1" data-nombre="Garnier Fructis Hair Food Aloe Crema para Peinar" data-precio="9500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Garnier_Fructis_Hair_Food_Aloe_Crema_Peinar.jfif');"></div>
+            <div class="producto-info">
+                <h3>Garnier Fructis Hair Food Aloe Crema para Peinar</h3>
+                <p>Crema para peinar que ayuda a hidratar y suavizar el cabello, facilitando el desenredado y dejando una sensación ligera. Ideal para ondas y rulos.</p>
+                <span class="producto-precio">$9.500</span>
+
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
         </div>
 
-        <section class="catalogo-productos">
-            <!-- Producto 1 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto1.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$15.000</span>
-                    <button class="btn-comprar">Comprar</button>
-                </div>
-            </div>
+        <!-- Producto 2 -->
+        <div class="producto-card" data-id="2" data-nombre="Skala Mais Cachos Crema para Peinar" data-precio="11500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Skala_Mais_Cachos_Crema_Peinar.jfif');"></div>
+            <div class="producto-info">
+                <h3>Skala Mais Cachos Crema para Peinar</h3>
+                <p>Crema capilar pensada para el cuidado de los rulos. Ayuda a mejorar la definición, aportar suavidad y controlar el frizz. Presentación familiar.</p>
+                <span class="producto-precio">$11.500</span>
 
-            <!-- Producto 2 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto2.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$22.000</span>
-                    <button class="btn-comprar">Comprar</button>
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="producto-card" data-id="3" data-nombre="Pantene Rizos Definidos Crema para Peinar" data-precio="8500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Pantene_Rizos_Definidos_Crema_Peinar.jfif');"></div>
+            <div class="producto-info">
+                <h3>Pantene Rizos Definidos Crema para Peinar</h3>
+                <p>Crema para peinar que ayuda a mantener los rulos manejables, reducir el frizz y mejorar la definición sin necesidad de enjuague.</p>
+                <span class="producto-precio">$8.500</span>
+
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="producto-card" data-id="4" data-nombre="Activador de Rulos con Aceite de Coco" data-precio="10500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Activador_Rulos.jfif');"></div>
+            <div class="producto-info">
+                <h3>Activador de Rulos con Aceite de Coco</h3>
+                <p>Producto de peinado que ayuda a resaltar la forma natural de los rulos, aportar suavidad y controlar el encrespamiento. Ideal para usar después del lavado.</p>
+                <span class="producto-precio">$10.500</span>
+
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
         <footer>
             <div class="footer-columna">
@@ -73,6 +142,6 @@
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="../../script.js"></script>
 </body>
 </html>

@@ -20,38 +20,107 @@
             <a href="../../Maquillaje.html">Maquillaje</a>
             <a href="../../Depilacion.html">Depilación</a>
             <a href="../../Venta.html" class="activo">Venta</a>
+            <a href="#" class="abrir-carrito-trigger">Mi Carrito 🛒</a>
         </div>
     </nav>
 
     <div id="contenedor_principal">
-        <div class="hero-servicio">
-            <h1>Acondicionadores</h1>
-            <p class="hero-tagline">Descripción breve de los productos disponibles</p>
+    <!-- Botón para regresar a la página anterior -->
+    <div style="margin-bottom: 20px;">
+        <a href="../../Capilar_venta.html" class="btn-secundario" style="text-decoration: none; display: inline-block; text-align: center; line-height: normal;">← Volver</a>
+    </div>
+
+    <div class="hero-servicio">
+        <h1>Acondicionadores</h1>
+        <p class="hero-tagline">Hidratación, suavidad y nutrición para mantener el cabello sano y fácil de peinar.</p>
+    </div>
+
+    <section class="catalogo-productos">
+        <!-- Producto 1 -->
+        <div class="producto-card" data-id="1" data-nombre="Pantene Pro-V Restauración" data-precio="8500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Pantene_Pro-V_Restauración.jfif');"></div>
+            <div class="producto-info">
+                <h3>Pantene Pro-V Restauración</h3>
+                <p>Acondicionador que ayuda a suavizar el cabello y mejorar el aspecto de las zonas dañadas. Facilita el desenredado y aporta brillo.</p>
+                <span class="producto-precio">$8.500</span>
+
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
         </div>
 
-        <section class="catalogo-productos">
-            <!-- Producto 1 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto1.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$15.000</span>
-                    <button class="btn-comprar">Comprar</button>
-                </div>
-            </div>
+        <!-- Producto 2 -->
+        <div class="producto-card" data-id="2" data-nombre="L'Oréal Paris Elvive Hidra Hialurónico" data-precio="9500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Paris_Elvive_Hidra_Hialurónico.jfif');"></div>
+            <div class="producto-info">
+                <h3>L'Oréal Paris Elvive Hidra Hialurónico</h3>
+                <p>Acondicionador hidratante que ayuda a dejar el cabello más suave, flexible y manejable. Ideal para el cabello deshidratado.</p>
+                <span class="producto-precio">$9.500</span>
 
-            <!-- Producto 2 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto2.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$22.000</span>
-                    <button class="btn-comprar">Comprar</button>
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="producto-card" data-id="3" data-nombre="Garnier Fructis Hair Food Aloe" data-precio="11500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Garnier_Fructis_Hair_Food_Aloe.jfif');"></div>
+            <div class="producto-info">
+                <h3>Garnier Fructis Hair Food Aloe</h3>
+                <p>Acondicionador con aloe vera que ayuda a hidratar el cabello y mejorar su suavidad. Una opción para el cuidado del cabello seco o deshidratado.</p>
+                <span class="producto-precio">$11.500</span>
+
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="producto-card" data-id="4" data-nombre="Dove Reconstrucción Completa" data-precio="7500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Dove_Reconstrucción_Completa.jfif');"></div>
+            <div class="producto-info">
+                <h3>Dove Reconstrucción Completa</h3>
+                <p>Acondicionador de uso diario que ayuda a suavizar el cabello, facilitar el peinado y mejorar el aspecto de las fibras capilares dañadas.</p>
+                <span class="producto-precio">$7.500</span>
+
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
         <footer>
             <div class="footer-columna">
@@ -73,6 +142,6 @@
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="../../script.js"></script>
 </body>
 </html>

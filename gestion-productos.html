@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique - Inicio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav id="barra_navegacion">
+        <a href="index_admin.html" class="nav-marca">
+            <span id="logo_nav"></span>
+            <span class="nav-nombre">Boutique</span>
+        </a>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <div class="nav-links">
+            <a href="index_admin.html">Inicio</a>
+            <a href="gestion-staff.html">Gestión STAFF</a>
+            <a href="gestion-productos.html" class="activo">Gestión Productos</a>
+        </div>
+    </nav>
+
+
+    <div id="contenedor_principal">
+        <div class="hero-servicio">
+            <h1>Gestión de Productos</h1>
+            <p class="hero-tagline">Agregá, modificá o eliminá los productos del catálogo</p>
+        </div>
+
+        <!-- Formulario de Productos -->
+        <div class="reserva-card" style="max-width: 800px; margin: 0 auto 40px auto; background: #212021; padding: 40px; border-radius: 20px; border: 3px solid rgb(246, 112, 181); box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4);">
+            <h3 id="titulo-form-producto" style="color: rgb(166, 92, 236); margin-top: 0; margin-bottom: 25px; font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: 26px;">Agregar Nuevo Producto</h3>
+            
+            <form id="form-producto-crud">
+                <input type="hidden" id="modo-edicion-prod" value="crear">
+                <input type="hidden" id="codigo-producto">
+
+                <div style="margin-bottom: 20px;">
+                    <label for="nombre-prod" style="color: #fff; display: block; margin-bottom: 8px; font-size: 15px;">Nombre del Producto:</label>
+                    <input type="text" id="nombre-prod" required style="width: 100%; padding: 12px; background: #1a191a; border: 2px solid rgb(246, 112, 181); color: #fff; border-radius: 12px; box-sizing: border-box; font-size: 15px;">
+                </div>
+
+                <div style="display: flex; gap: 20px; margin-bottom: 30px;">
+                    <div style="flex: 1;">
+                        <label for="precio-prod" style="color: #fff; display: block; margin-bottom: 8px; font-size: 15px;">Precio ($):</label>
+                        <input type="number" step="0.01" id="precio-prod" required style="width: 100%; padding: 12px; background: #1a191a; border: 2px solid rgb(246, 112, 181); color: #fff; border-radius: 12px; box-sizing: border-box; font-size: 15px;">
+                    </div>
+                    <div style="flex: 1;">
+                        <label for="stock-prod" style="color: #fff; display: block; margin-bottom: 8px; font-size: 15px;">Stock:</label>
+                        <input type="number" id="stock-prod" required style="width: 100%; padding: 12px; background: #1a191a; border: 2px solid rgb(246, 112, 181); color: #fff; border-radius: 12px; box-sizing: border-box; font-size: 15px;">
+                    </div>
+                </div>
+
+                <div style="text-align: center; display: flex; gap: 15px; justify-content: center;">
+                    <button type="submit" id="btn-guardar-prod" style="background: rgb(246, 112, 181); border: 2px solid rgb(255, 150, 200); color: #fff; padding: 12px 30px; border-radius: 20px; font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: 16px; font-weight: bold; cursor: pointer;">Guardar Producto</button>
+                    <button type="button" id="btn-cancelar-prod" style="display: none; background: #555; border: 2px solid #777; color: #fff; padding: 12px 20px; border-radius: 20px; font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: 16px; font-weight: bold; cursor: pointer;">Cancelar</button>
+                </div>
+            </form>
+            <p id="mensaje-prod" style="text-align: center; margin-top: 15px; font-weight: bold;"></p>
+        </div>
+
+        <!-- Tabla de Productos -->
+        <div style="max-width: 900px; margin: 0 auto; overflow-x: auto;">
+            <table style="width: 100%; border-collapse: collapse; background: #212021; color: #fff; border-radius: 15px; overflow: hidden; border: 2px solid rgb(246, 112, 181);">
+                <thead>
+                    <tr style="background: rgb(246, 112, 181); text-align: left;">
+                        <th style="padding: 12px;">Código</th>
+                        <th style="padding: 12px;">Nombre</th>
+                        <th style="padding: 12px;">Precio</th>
+                        <th style="padding: 12px;">Stock</th>
+                        <th style="padding: 12px; text-align: center;">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-productos-body">
+                    <!-- Se llena con JS -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -20,38 +20,115 @@
             <a href="../../Maquillaje.html">Maquillaje</a>
             <a href="../../Depilacion.html">Depilación</a>
             <a href="../../Venta.html" class="activo">Venta</a>
+            <a href="#" class="abrir-carrito-trigger">Mi Carrito 🛒</a>
         </div>
     </nav>
 
     <div id="contenedor_principal">
-        <div class="hero-servicio">
-            <h1>Repujadores de cutícula y alicates</h1>
-            <p class="hero-tagline">Descripción breve de los productos disponibles</p>
+    <!-- Botón para regresar a la página anterior -->
+    <div style="margin-bottom: 20px;">
+        <a href="../../Uñas_venta.html" class="btn-secundario" style="text-decoration: none; display: inline-block; text-align: center; line-height: normal;">← Volver</a>
+    </div>
+
+    <div class="hero-servicio">
+        <h1>Repujadores de cutícula y alicates</h1>
+        <p class="hero-tagline">Herramientas para preparar las uñas y realizar manicuras prolijas y cuidadosas.</p>
+    </div>
+
+    <section class="catalogo-productos">
+        <!-- Producto 1 -->
+        <div class="producto-card" data-id="1" data-nombre="Repujador de Cutícula de Acero Inoxidable" data-precio="6500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/Repujador_Cutícula_Acero.jfif');"></div>
+            <div class="producto-info">
+                <h3>Repujador de Cutícula de Acero Inoxidable</h3>
+                <p>Herramienta metálica de doble punta para empujar suavemente la cutícula y retirar restos adheridos a la superficie de la uña.</p>
+                <span class="producto-precio">$6.500</span>
+
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
         </div>
 
-        <section class="catalogo-productos">
-            <!-- Producto 1 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto1.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$15.000</span>
-                    <button class="btn-comprar">Comprar</button>
-                </div>
-            </div>
+        <!-- Producto 2 -->
+        <div class="producto-card" data-id="2" data-nombre="Alicate para Cutículas Profesional" data-precio="12500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/Alicate_Cutículas.jfif');"></div>
+            <div class="producto-info">
+                <h3>Alicate para Cutículas Profesional</h3>
+                <p>Alicate de precisión con puntas finas, diseñado para retirar pequeños excedentes de cutícula con control durante la manicura.</p>
+                <span class="producto-precio">$12.500</span>
 
-            <!-- Producto 2 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto2.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$22.000</span>
-                    <button class="btn-comprar">Comprar</button>
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="producto-card" data-id="3" data-nombre="Repujador de Cutícula de Madera" data-precio="2500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/Repujador_Cutícula_Madera.jfif');"></div>
+            <div class="producto-info">
+                <h3>Repujador de Cutícula de Madera</h3>
+                <p>Palito de madera liviano y práctico para empujar suavemente la cutícula y ayudar en la preparación de las uñas.</p>
+                <span class="producto-precio">$2.500</span>
+
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="producto-card" data-id="4" data-nombre="Alicate para Uñas de Acero Inoxidable" data-precio="14500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/Alicate_Uñas_Acero_Inoxidable.jfif');"></div>
+            <div class="producto-info">
+                <h3>Alicate para Uñas de Acero Inoxidable</h3>
+                <p>Herramienta resistente para cortar uñas con precisión. Su diseño permite un agarre cómodo durante la manicura y pedicura.</p>
+                <span class="producto-precio">$14.500</span>
+
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
         <footer>
             <div class="footer-columna">
@@ -73,6 +150,6 @@
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="../../script.js"></script>
 </body>
 </html>

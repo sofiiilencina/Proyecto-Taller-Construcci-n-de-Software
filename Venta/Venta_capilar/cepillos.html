@@ -20,38 +20,107 @@
             <a href="../../Maquillaje.html">Maquillaje</a>
             <a href="../../Depilacion.html">Depilación</a>
             <a href="../../Venta.html" class="activo">Venta</a>
+            <a href="#" class="abrir-carrito-trigger">Mi Carrito 🛒</a>
         </div>
     </nav>
 
     <div id="contenedor_principal">
-        <div class="hero-servicio">
-            <h1>Cepillos</h1>
-            <p class="hero-tagline">Descripción breve de los productos disponibles</p>
+    <!-- Botón para regresar a la página anterior -->
+    <div style="margin-bottom: 20px;">
+        <a href="../../Capilar_venta.html" class="btn-secundario" style="text-decoration: none; display: inline-block; text-align: center; line-height: normal;">← Volver</a>
+    </div>
+
+    <div class="hero-servicio">
+        <h1>Cepillos</h1>
+        <p class="hero-tagline">Cepillos para desenredar, peinar y cuidar el cabello en cada rutina.</p>
+    </div>
+
+    <section class="catalogo-productos">
+        <!-- Producto 1 -->
+        <div class="producto-card" data-id="1" data-nombre="Cepillo Desenredante Flexible" data-precio="8500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Cepillo_Desenredante_Flexible.jfif');"></div>
+            <div class="producto-info">
+                <h3>Cepillo Desenredante Flexible</h3>
+                <p>Diseño con cerdas flexibles que ayuda a desenredar el cabello con comodidad y reducir los tirones. Ideal para cabello húmedo o seco.</p>
+                <span class="producto-precio">$8.500</span>
+
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
         </div>
 
-        <section class="catalogo-productos">
-            <!-- Producto 1 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto1.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$15.000</span>
-                    <button class="btn-comprar">Comprar</button>
-                </div>
-            </div>
+        <!-- Producto 2 -->
+        <div class="producto-card" data-id="2" data-nombre="Cepillo Neumático con Almohadilla" data-precio="10500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Cepillo_Neumático_Almohadilla.jfif');"></div>
+            <div class="producto-info">
+                <h3>Cepillo Neumático con Almohadilla</h3>
+                <p>Cepillo clásico con base acolchada que ayuda a desenredar y alisar el cabello suavemente. Adecuado para el uso diario.</p>
+                <span class="producto-precio">$10.500</span>
 
-            <!-- Producto 2 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto2.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$22.000</span>
-                    <button class="btn-comprar">Comprar</button>
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="producto-card" data-id="3" data-nombre="Cepillo Redondo Térmico" data-precio="12000">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Cepillo_Redondo_Térmico.jfif');"></div>
+            <div class="producto-info">
+                <h3>Cepillo Redondo Térmico</h3>
+                <p>Ideal para brushing y secado con secador. Ayuda a dar forma, crear volumen y conseguir un acabado más pulido en el peinado.</p>
+                <span class="producto-precio">$12.000</span>
+
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="producto-card" data-id="4" data-nombre="Cepillo de Madera con Cerdas" data-precio="9500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Cepillo_Madera_Cerdas.jfif');"></div>
+            <div class="producto-info">
+                <h3>Cepillo de Madera con Cerdas</h3>
+                <p>Cepillo con mango de madera y cerdas para peinar y ordenar el cabello. Su diseño cómodo lo convierte en una opción práctica para todos los días.</p>
+                <span class="producto-precio">$9.500</span>
+
+                <button class="btn-comprar">Comprar</button>
+
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
         <footer>
             <div class="footer-columna">
@@ -73,6 +142,6 @@
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="../../script.js"></script>
 </body>
 </html>

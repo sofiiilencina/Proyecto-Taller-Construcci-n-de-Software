@@ -20,38 +20,115 @@
             <a href="../../Maquillaje.html">Maquillaje</a>
             <a href="../../Depilacion.html">Depilación</a>
             <a href="../../Venta.html" class="activo">Venta</a>
+            <a href="#" class="abrir-carrito-trigger">Mi Carrito 🛒</a>
         </div>
     </nav>
 
-    <div id="contenedor_principal">
-        <div class="hero-servicio">
-            <h1>Glitter, strass y apliques</h1>
-            <p class="hero-tagline">Descripción breve de los productos disponibles</p>
+        <div id="contenedor_principal">
+    <!-- Botón para regresar a la página anterior -->
+    <div style="margin-bottom: 20px;">
+        <a href="../../Uñas_venta.html" class="btn-secundario" style="text-decoration: none; display: inline-block; text-align: center; line-height: normal;">← Volver</a>
+    </div>
+
+    <div class="hero-servicio">
+        <h1>Glitter, strass y apliques</h1>
+        <p class="hero-tagline">Decoraciones para crear diseños de uñas brillantes, originales y personalizados.</p>
+    </div>
+
+    <section class="catalogo-productos">
+        <!-- Producto 1 -->
+        <div class="producto-card" data-id="1" data-nombre="Glitter para uñas Born Pretty" data-precio="6500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/Glitter_Uñas.jfif');"></div>
+            <div class="producto-info">
+                <h3>Glitter para uñas Born Pretty</h3>
+                <p>Brillo decorativo en polvo para realizar diseños sobre uñas naturales, esculpidas o esmaltadas. Ideal para crear efectos brillantes, degradados y detalles de nail art.</p>
+                <span class="producto-precio">$6.500</span>
+
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
         </div>
 
-        <section class="catalogo-productos">
-            <!-- Producto 1 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto1.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$15.000</span>
-                    <button class="btn-comprar">Comprar</button>
-                </div>
-            </div>
+        <!-- Producto 2 -->
+        <div class="producto-card" data-id="2" data-nombre="Strass para uñas Swarovski" data-precio="12000">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/Strass_Uñas_Swarovski.jfif');"></div>
+            <div class="producto-info">
+                <h3>Strass para uñas Swarovski</h3>
+                <p>Cristales decorativos para nail art que aportan brillo y elegancia. Se pueden utilizar para destacar una uña completa o agregar pequeños detalles a diseños especiales.</p>
+                <span class="producto-precio">$12.000</span>
 
-            <!-- Producto 2 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto2.jpeg');"></div>
-                <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$22.000</span>
-                    <button class="btn-comprar">Comprar</button>
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="producto-card" data-id="3" data-nombre="Láminas decorativas Born Pretty" data-precio="5500">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/Láminas_Decorativas.jfif');"></div>
+            <div class="producto-info">
+                <h3>Láminas decorativas Born Pretty</h3>
+                <p>Láminas finas para decorar las uñas con efectos metálicos y diseños llamativos. Permiten crear detalles personalizados y combinar distintos colores y estilos.</p>
+                <span class="producto-precio">$5.500</span>
+
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="producto-card" data-id="4" data-nombre="Apliques para uñas en forma de flores" data-precio="7000">
+            <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Uñas/Apliques_Uñas_Flores.jfif');"></div>
+            <div class="producto-info">
+                <h3>Apliques para uñas en forma de flores</h3>
+                <p>Pequeñas decoraciones con forma de flor para crear diseños delicados y coloridos. Se pueden combinar con esmaltes, glitter y cristales para personalizar cada manicura.</p>
+                <span class="producto-precio">$7.000</span>
+
+                <!-- Botón Inicial de Comprar -->
+                <button class="btn-comprar">Comprar</button>
+
+                <!-- Selector de cantidad y confirmación (Oculto inicialmente) -->
+                <div class="selector-cantidad-container" style="display: none;">
+                    <div class="controles-cantidad">
+                        <button type="button" class="btn-restar">-</button>
+                        <span class="cantidad-num">1</span>
+                        <button type="button" class="btn-sumar">+</button>
+                    </div>
+                    <button class="btn-agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
         <footer>
             <div class="footer-columna">
@@ -73,6 +150,6 @@
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="../../script.js"></script>
 </body>
 </html>

@@ -20,38 +20,107 @@
             <a href="../../Maquillaje.html">Maquillaje</a>
             <a href="../../Depilacion.html">Depilación</a>
             <a href="../../Venta.html" class="activo">Venta</a>
+            <a href="#" class="abrir-carrito-trigger">Mi Carrito 🛒</a>
         </div>
     </nav>
 
     <div id="contenedor_principal">
+        <!-- Botón para regresar a la página anterior -->
+        <div style="margin-bottom: 20px;">
+            <a href="../../Capilar_venta.html" class="btn-secundario" style="text-decoration: none; display: inline-block; text-align: center; line-height: normal;">← Volver</a>
+        </div>
+
         <div class="hero-servicio">
             <h1>Shampoos</h1>
-            <p class="hero-tagline">Descripción breve de los productos disponibles</p>
+            <p class="hero-tagline">Shampoos para limpiar, hidratar y cuidar el cabello según las necesidades de cada tipo de pelo.</p>
         </div>
 
         <section class="catalogo-productos">
             <!-- Producto 1 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto1.jpeg');"></div>
+            <div class="producto-card" data-id="1" data-nombre="Shampoo Pantene Pro-V Restauración" data-precio="8500">
+                <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Shampoo_Pantene_Pro-V_Restauración.jfif');"></div>
                 <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$15.000</span>
+                    <h3>Shampoo Pantene Pro-V Restauración</h3>
+                    <p>Shampoo de uso diario que limpia el cabello y ayuda a reducir el aspecto del daño. Ideal para cabello seco o dañado. Presentación de 400 ml.</p>
+                    <span class="producto-precio">$8.500</span>
+
                     <button class="btn-comprar">Comprar</button>
+
+                    <div class="selector-cantidad-container" style="display: none;">
+                        <div class="controles-cantidad">
+                            <button type="button" class="btn-restar">-</button>
+                            <span class="cantidad-num">1</span>
+                            <button type="button" class="btn-sumar">+</button>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al carrito</button>
+                    </div>
                 </div>
             </div>
 
             <!-- Producto 2 -->
-            <div class="producto-card">
-                <div class="producto-imagen" style="background-image: url('Imágenes/producto2.jpeg');"></div>
+            <div class="producto-card" data-id="2" data-nombre="Shampoo L'Oréal Paris Elvive Hidra Hialurónico" data-precio="9500">
+                <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Shampoo_L_Paris_Elvive_Hidra_Hialurónico.jfif');"></div>
                 <div class="producto-info">
-                    <h3>Nombre del Producto</h3>
-                    <p>Descripción detallada del producto, beneficios y presentación.</p>
-                    <span class="producto-precio">$22.000</span>
+                    <h3>Shampoo L'Oréal Paris Elvive Hidra Hialurónico</h3>
+                    <p>Shampoo hidratante que ayuda a dejar el cabello más suave, ligero y con movimiento. Recomendado para cabello deshidratado. Presentación de 400 ml.</p>
+                    <span class="producto-precio">$9.500</span>
+
                     <button class="btn-comprar">Comprar</button>
+
+                    <div class="selector-cantidad-container" style="display: none;">
+                        <div class="controles-cantidad">
+                            <button type="button" class="btn-restar">-</button>
+                            <span class="cantidad-num">1</span>
+                            <button type="button" class="btn-sumar">+</button>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="producto-card" data-id="3" data-nombre="Shampoo Garnier Fructis Hair Food Aloe" data-precio="8500">
+                <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Shampoo_Garnier_Fructis_Hair_Food_Aloe.jfif');"></div>
+                <div class="producto-info">
+                    <h3>Shampoo Garnier Fructis Hair Food Aloe</h3>
+                    <p>Shampoo con aloe vera, pensado para limpiar suavemente y aportar una sensación de frescura e hidratación. Ideal para cabello normal o deshidratado. Presentación de 350 ml.</p>
+                    <span class="producto-precio">$8.500</span>
+
+                    <button class="btn-comprar">Comprar</button>
+
+                    <div class="selector-cantidad-container" style="display: none;">
+                        <div class="controles-cantidad">
+                            <button type="button" class="btn-restar">-</button>
+                            <span class="cantidad-num">1</span>
+                            <button type="button" class="btn-sumar">+</button>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="producto-card" data-id="4" data-nombre="Shampoo Dove Reconstrucción Completa" data-precio="7500">
+                <div class="producto-imagen" style="background-image: url('../../Imágenes/Venta_Capilar/Shampoo_Dove_Reconstrucción_Completa.jfif');"></div>
+                <div class="producto-info">
+                    <h3>Shampoo Dove Reconstrucción Completa</h3>
+                    <p>Shampoo que limpia y ayuda a mejorar la suavidad y el aspecto del cabello dañado. Ideal para acompañar una rutina de cuidado y reparación. Presentación de 400 ml.</p>
+                    <span class="producto-precio">$7.500</span>
+
+                    <button class="btn-comprar">Comprar</button>
+
+                    <div class="selector-cantidad-container" style="display: none;">
+                        <div class="controles-cantidad">
+                            <button type="button" class="btn-restar">-</button>
+                            <span class="cantidad-num">1</span>
+                            <button type="button" class="btn-sumar">+</button>
+                        </div>
+                        <button class="btn-agregar-carrito">Agregar al carrito</button>
+                    </div>
                 </div>
             </div>
         </section>
+
 
         <footer>
             <div class="footer-columna">
@@ -73,6 +142,6 @@
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="../../script.js"></script>
 </body>
 </html>
