@@ -351,15 +351,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- 2. LÓGICA PARA REGISTRO (registro.html) ---
-    const formRegistro = document.getElementById('form-registro') || document.querySelector('.registro-form');
+    const formRegistro = document.getElementById('form-registro');
     if (formRegistro) {
         formRegistro.addEventListener('submit', async (e) => {
             e.preventDefault();
             // Asegúrate de que los IDs en tu registro.html coincidan con estos
-            const nombre_cliente = document.getElementById('nombre-reg')?.value || document.getElementById('nombre')?.value;
-            const apellido_cliente = document.getElementById('apellido-reg')?.value || document.getElementById('apellido')?.value;
-            const email = document.getElementById('email-reg')?.value || document.getElementById('correo')?.value;
-            const contraseña = document.getElementById('password-reg')?.value || document.getElementById('contraseña')?.value;
+            const nombre_cliente = document.getElementById('nombre-registro').value;
+            const apellido_cliente = document.getElementById('apellido-registro').value;
+            const email = document.getElementById('correo-registro').value;
+            const contraseña = document.getElementById('password-registro').value;
 
             try {
                 const res = await fetch('http://localhost:3000/cliente', {
@@ -376,13 +376,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             } catch (error) {
                 console.error('Error:', error);
-                alert('Error de conexión con el servidor');
+                alert('Error de conexión con el servidor1');
             }
         });
     }
 
     // --- 3. LÓGICA PARA CONTACTO / SOPORTE (Contacto.html) ---
-    const formContacto = document.querySelector('.contacto-grid form');
+    const formContacto = document.getElementById('contacto-form');
     if (formContacto) {
         const mensajeEnvio = document.getElementById('mensaje-envio');
 
@@ -620,7 +620,6 @@ if (formStaffCrud && tablaStaffBody) {
             apellido_staff: apellidoInput.value,
             especialidad: especialidadInput.value,
             disponibilidad_horaria: disponibilidadInput.value,
-            turno_idturno: turnoIdInput.value
         };
 
         try {
@@ -632,8 +631,8 @@ if (formStaffCrud && tablaStaffBody) {
                 method = 'PUT';
             }
 
-            const res = await fetch(url, {
-                method: method,
+            const res = await fetch("http://localhost:3000/staff", {
+                method: "post",
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(datos)
             });

@@ -23,14 +23,22 @@ const PORT = 3000;
 // Registrar cliente
 app.post("/cliente", (req, res) => {
     const { apellido_cliente, nombre_cliente, email, contraseña } = req.body;
+    
     if (!apellido_cliente || !nombre_cliente || !email || !contraseña) {
         return res.status(400).json({ error: "Todos los campos del cliente son obligatorios" });
     }
-    const consulta = `INSERT INTO cliente (apellido_cliente, nombre_cliente, email, contraseña) VALUES (?, ?, ?, ?)`;
+
+    const consulta = `INSERT INTO cliente (apellido_cliente, nombre_cliente, email, contraseña, soporte_idsoporte, turno_idturno) VALUES (?, ?, ?, ?, 1, 1)`;
+    
     conexion.query(consulta, [apellido_cliente, nombre_cliente, email, contraseña], (error, resultado) => {
         if (error) {
-            return res.status(500).json({ error: "Error al registrar el cliente" });
+            console.error("Error en MySQL:", error); // Muestra el error real en tu terminal
+            return res.status(500).json({ 
+                error: "Error al registrar el cliente", 
+                detalle: error.sqlMessage // Envía el mensaje exacto de MySQL para ayudarte a corregirlo
+            });
         }
+        
         res.status(201).json({
             mensaje: "Cliente registrado correctamente",
             id_nuevo_cliente: resultado.insertId
@@ -123,12 +131,12 @@ app.get("/staff", (req, res) => {
 
 // CREAR STAFF (Create)
 app.post("/staff", (req, res) => {
-    const { dnistaff, nombre, apellido_staff, disponibilidad_horaria, especialidad, turno_idturno } = req.body;
-    if (!dnistaff || !nombre || !apellido_staff || !disponibilidad_horaria || !especialidad || !turno_idturno) {
+    const { dnistaff, nombre, apellido_staff, disponibilidad_horaria, especialidad} = req.body;
+    if (!dnistaff || !nombre || !apellido_staff || !disponibilidad_horaria || !especialidad ) {
         return res.status(400).json({ error: "Todos los campos son obligatorios" });
     }
-    const consulta = `INSERT INTO staff (dnistaff, nombre, apellido_staff, disponibilidad_horaria, especialidad, turno_idturno) VALUES (?, ?, ?, ?, ?, ?)`;
-    conexion.query(consulta, [dnistaff, nombre, apellido_staff, disponibilidad_horaria, especialidad, turno_idturno], (error, resultado) => {
+    const consulta = `INSERT INTO staff (dnistaff, nombre, apellido_staff, disponibilidad_horaria, especialidad, turno_idturno) VALUES (?, ?, ?, ?, ?, 1)`;
+    conexion.query(consulta, [dnistaff, nombre, apellido_staff, disponibilidad_horaria, especialidad], (error, resultado) => {
         if (error) {
             return res.status(500).json({ error: "Error al registrar el staff (verificá que el DNI no exista y que el ID de turno sea válido)" });
         }
